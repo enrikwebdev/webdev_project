@@ -2,12 +2,15 @@
 
 1. Ricerca nuova attività in Lombardia
 2. Selezione migliore opportunità
-3. Creazione sito (contenuti originali)
-4. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
-5. Scrittura `proposta_email.txt`
-6. Log su `Lombardia/_ops/registro_storico.csv`
+3. **Analisi competitor locale (3 competitor) + strategia posizionamento**
+4. Creazione sito (contenuti originali) in modalità Elite Agency
+5. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
+6. Scrittura `proposta_email.txt`
+7. Log su `Lombardia/_ops/registro_storico.csv`
 
-Standard design: prima di finalizzare ogni sito applicare obbligatoriamente `Lombardia/_ops/design_standard_2025_2026.md`.
+Standard obbligatori:
+- `Lombardia/_ops/design_standard_2025_2026.md`
+- `Lombardia/_ops/elite_agency_mode.md`
 
 Vincoli:
 - Non duplicare attività già lavorate
