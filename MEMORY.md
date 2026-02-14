@@ -20,6 +20,7 @@
 - Preferisce architettura ibrida (non solo one-page): quando cambia contesto, usare pagine/switch dedicati (es. Trattamenti, Chi siamo, Blog, Prenota).
 - Richiede logo dedicato in testata per ogni attività (wordmark/monogram coerente col brand).
 - Evitare animazioni "pacchiane": motion premium sobrio/elegante.
+- Evitare box puramente testuali: preferire sezioni storytelling visual-first (immagine/video + copy breve + proof/CTA) per mantenere impatto premium.
 
 ## Operating Notes
 - In caso di dubbio su presenza sito: scartare lead (SCARTATA_HA_SITO).
