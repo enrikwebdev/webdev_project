@@ -47,6 +47,11 @@ Obiettivo: ogni sito deve sembrare prodotto da web agency high-end, con focus co
 - Mantenere testo fedele alla fonte o parafrasi non fuorviante.
 - Evitare recensioni inventate quando sono disponibili recensioni reali.
 
+### Regola media (foto/video lavori)
+- Se disponibili materiali pubblici dell’attività (es. Google Business Profile, social ufficiali), includere foto/video che mostrino lavori reali.
+- Priorità a contenuti ufficiali dell’attività; in alternativa usare media stock coerenti come fallback.
+- Evitare uso improprio di contenuti protetti: mantenere attribuzione/link fonte quando necessario e non spacciare media non ufficiali come lavori reali.
+
 ## 8) SEO locale
 - Città + provincia naturali nei testi
 - H1 ottimizzato
