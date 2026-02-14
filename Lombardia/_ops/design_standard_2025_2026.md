@@ -41,6 +41,8 @@ Obiettivo: ogni sito deve sembrare prodotto da web agency high-end, con focus co
 - Benefici concreti
 - Prova sociale (realistica)
 - CTA finale
+- Architettura ibrida: homepage conversion + pagine dedicate quando cambia contesto (es. Trattamenti, Chi siamo, Blog, Prenota), evitando one-page rigido.
+- Testata con logo dedicato attività (wordmark/monogram originale) + navigazione chiara.
 
 ### Regola recensioni
 - Se disponibili recensioni Google positive, inserirle in sezione "Clienti soddisfatti".

@@ -12,3 +12,5 @@
 - Sezioni brevi, headline grandi, gerarchia pulita
 - Scrolling con micro-animazioni fluide non invasive
 - Gallery lavori reali + testimonianze in evidenza
+- Architettura ibrida: homepage conversion + pagine dedicate per contesti distinti (es. Trattamenti, Blog, Prenota)
+- Header con logo proprietario del salone (wordmark/monogram) e nav chiara

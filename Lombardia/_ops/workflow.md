@@ -6,8 +6,9 @@
 4. Creazione sito (contenuti originali) in modalità Elite Agency
 5. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
 6. Scrittura `proposta_email.txt`
-7. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse)
-8. Log su `Lombardia/_ops/registro_storico.csv`
+7. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)
+8. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse)
+9. Log su `Lombardia/_ops/registro_storico.csv`
 
 Standard obbligatori:
 - `Lombardia/_ops/design_standard_2025_2026.md`
