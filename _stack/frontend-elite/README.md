@@ -1,16 +1,11 @@
 # Frontend Elite (React + Vite + Tailwind + Framer Motion)
 
-Stack pronto per esperienze premium e animazioni moderne.
+Stack frontend per siti premium.
 
-## Google OAuth setup
-1. Crea credenziali **OAuth Client ID (Web application)** su Google Cloud Console.
-2. Aggiungi gli Authorized JavaScript origins (es. `http://localhost:5173`).
-3. Copia `.env.example` in `.env`.
-4. Inserisci il tuo client ID:
-   - `VITE_GOOGLE_CLIENT_ID=...apps.googleusercontent.com`
-5. Avvia:
-   - `npm run dev`
+## Nota importante
+Questo progetto **non** integra credenziali/API Google lato client.
+Le integrazioni Google (Sheets, Storage, ecc.) sono riservate a tooling interno/operativo backend, non ai siti consegnati.
 
-Login Google già integrato in `src/App.jsx` tramite `@react-oauth/google`.
-
-> Nota sicurezza: il **Client Secret non va mai nel frontend**. Usalo solo lato server (backend) per flow OAuth server-side.
+## Avvio
+- `npm install`
+- `npm run dev`
