@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-14T19:42:00Z",
-  "total_cycles": 5,
-  "total_leads_found": 5,
-  "total_sites_created": 5,
-  "total_emails_sent": 5,
+  "last_cycle_timestamp": "2026-02-14T21:42:00Z",
+  "total_cycles": 6,
+  "total_leads_found": 6,
+  "total_sites_created": 6,
+  "total_emails_sent": 6,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Caruso BarberShop",
+    "name": "Laura Acconciature",
     "city": "Bergamo",
-    "sector": "Parrucchiere uomo / Barberia",
+    "sector": "Parrucchiere",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-14T19:42:00Z"
+    "last_update": "2026-02-14T21:42:00Z"
   },
   "pipeline": [
     {
@@ -54,6 +54,14 @@
       "status": "site_created_email_ready",
       "created_at": "2026-02-14T19:42:00Z",
       "updated_at": "2026-02-14T19:42:00Z"
+    },
+    {
+      "name": "Laura Acconciature",
+      "city": "Bergamo",
+      "sector": "Parrucchiere",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-14T21:42:00Z",
+      "updated_at": "2026-02-14T21:42:00Z"
     }
   ],
   "performance_metrics": {
@@ -103,6 +111,12 @@
       "azione": "Nuovo ciclo su Caruso BarberShop Bergamo",
       "esito": "completato",
       "miglioramenti": "Applicato gate NO-SITO v2 con anti-falso-positivo domini brand + delivery sito premium con tunnel pubblico"
+    },
+    {
+      "timestamp": "2026-02-14T21:42:00Z",
+      "azione": "Nuovo ciclo su Laura Acconciature Bergamo",
+      "esito": "completato",
+      "miglioramenti": "Applicato gate NO-SITO v2 completo + build React premium su stack frontend-elite con QA smoke e tunnel pubblico"
     }
   ]
 }

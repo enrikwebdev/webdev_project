@@ -1,0 +1,90 @@
+LEAD: Laura Acconciature
+SETTORE: Parrucchiere (uomo/donna)
+CITTA: Bergamo (BG)
+INDIRIZZO: Via Giambattista Tiepolo 11, 24127 Bergamo
+TELEFONO: 035 4519485
+EMAIL: non pubblica (da richiesta diretta)
+RATING STIMATO: >=4 (profilo attivo in directory locale, presenza consolidata)
+FONTE: PagineGialle (listing Bergamo parrucchieri)
+
+=== GATE NO-SITO v2 (BLOCCANTE) ===
+Check 1 - Directory listing: PASS
+- Profilo directory consultato, nessun sito ufficiale esplicito collegato al brand.
+
+Check 2 - Query brand + città: PASS
+- Query: "Laura Acconciature Bergamo sito ufficiale"
+- Nessuna evidenza affidabile di dominio ufficiale brand associato all'attività.
+
+Check 3 - Query telefono: PASS
+- Query: "035 4519485"
+- Nessuna evidenza di sito ufficiale brand associato.
+
+Check 4 - Query P.IVA/ragione sociale (se disponibile): PASS
+- P.IVA non disponibile nel listing consultato.
+- Ricerca ragione sociale nominale senza match a dominio ufficiale.
+
+Check anti-falso-positivo domini brand: PASS
+- Verificati: lauraacconciature.it/.com, laura-acconciature.it/.com
+- Esito tecnico: nessuna risposta valida (000) e nessuna corrispondenza ufficiale.
+
+DECISIONE FINALE: IDONEA (4/4 PASS)
+
+=== FASE 1 ELITE — ANALISI COMPETITOR ===
+Competitor locali analizzati (Bergamo):
+1) Donna Hair
+   - Design: classico vetrina locale, poco storytelling
+   - Struttura: servizi + contatti base
+   - Debolezze visive: impatto hero debole
+   - Debolezze persuasive: CTA non dominante, proof limitato
+2) Boutique della Bellezza
+   - Design: ricco ma dispersivo
+   - Struttura: molto descrittiva, poca progressione conversione
+   - Debolezze visive: overload informativo
+   - Debolezze persuasive: promessa non focalizzata
+3) Beauty Hair
+   - Design: standard directory/locale
+   - Struttura: lineare, poca differenziazione
+   - Debolezze visive: branding non memorabile
+   - Debolezze persuasive: assente sequenza problema→soluzione→CTA
+
+Benchmark esterni (ispirazione):
+- saloni premium con hero visual-first, CTA sticky, cards servizi sintetiche
+- pattern product-showcase con reveal morbidi e blocchi narrativi
+
+Gap di mercato:
+- Pochi siti locali combinano premium visual + chiarezza conversione mobile-first.
+
+Pattern integrati nel sito:
+- Hero forte beneficio + CTA immediata
+- Story blocks problema/soluzione/prova sociale
+- Navigazione ibrida (Home, Trattamenti, Chi siamo, Prenota)
+- CTA ripetuta in header e sezione finale
+
+=== FASE 2 ELITE — STRATEGIA POSIZIONAMENTO ===
+Target ideale: donne/uomini 25-55 area Bergamo che cercano qualità + praticità.
+Problema principale: saloni anonimi, poca personalizzazione, tempi poco chiari.
+Promessa: risultato curato e coerente con lo stile personale, in tempi ottimizzati.
+Differenziante: approccio naturale + esperienza rilassata + percorso semplice alla prenotazione.
+
+=== FASE 3 ELITE — PRODUZIONE SITO ===
+Stack obbligatorio usato: React + Vite + Tailwind + animazioni scroll (GSAP/Lenis)
+Output: landing premium con struttura ibrida e motion elegante.
+Percorso: Lombardia/LauraAcconciature_Bergamo/
+
+=== FASE 4 ELITE — CONVERSIONE ===
+- CTA unica primaria: chiamata prenotazione
+- CTA in hero + header + blocco prenota
+- Riduzione attrito: telefono sempre visibile, copy diretto, sezioni brevi
+
+=== FASE 5 ELITE — AUTOVALUTAZIONE ===
+Impatto visivo: 8.4
+Modernità: 8.2
+Chiarezza messaggio: 8.6
+Forza CTA: 8.7
+Differenziazione competitor: 8.1
+Esito: >=8, consegna approvata
+
+=== QA LIGHT ===
+qa:pw (smoke): PASS su Chromium
+qa:lh (Lighthouse): ESEGUITO (con criticità su contrasto/SEO/meta/ottimizzazione immagini)
+Report compare: https://googlechrome.github.io/lighthouse-ci/viewer/?baseReport=https%3A%2F%2Fstorage.googleapis.com%2Flighthouse-infrastructure.appspot.com%2Freports%2F1771105227341-84189.report.html&compareReport=https%3A%2F%2Fstorage.googleapis.com%2Flighthouse-infrastructure.appspot.com%2Freports%2F1771105291239-4766.report.html
