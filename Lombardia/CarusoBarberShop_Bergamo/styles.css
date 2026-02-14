@@ -1,0 +1,57 @@
+:root {
+  --bg: #0f1115;
+  --bg-soft: #161a22;
+  --text: #f3f4f7;
+  --muted: #b8bfd0;
+  --primary: #ff5f6d;
+  --secondary: #ffc371;
+  --card: #1c2230;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0b0d12 40%, var(--bg));
+  color: var(--text);
+  line-height: 1.55;
+}
+.hero {
+  min-height: 86vh;
+  padding: 1rem 1rem 2.5rem;
+  background: radial-gradient(circle at 20% 10%, rgba(255,95,109,.24), transparent 35%),
+              radial-gradient(circle at 80% 0%, rgba(255,195,113,.20), transparent 30%);
+}
+.topbar { display:flex; justify-content:space-between; align-items:center; max-width:1100px; margin:0 auto; }
+.logo { font-weight: 800; letter-spacing: .3px; }
+.hero-content { max-width: 1100px; margin: 3.5rem auto 0; }
+.eyebrow { color: var(--secondary); font-weight: 600; margin: 0 0 .5rem; }
+h1 { font-size: clamp(2rem, 5vw, 4rem); line-height: 1.06; margin: 0; max-width: 14ch; }
+h1 span { color: var(--secondary); }
+.subtitle { max-width: 60ch; color: var(--muted); margin-top: 1rem; }
+.cta-row { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1.25rem; }
+.btn {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height: 46px; padding: .72rem 1.1rem; border-radius: 999px;
+  text-decoration:none; color:var(--text); border:1px solid #2a3449;
+  transition: transform .2s ease, background .2s ease;
+}
+.btn:hover { transform: translateY(-2px); background:#222b3d; }
+.btn.primary { background: linear-gradient(90deg, var(--primary), var(--secondary)); color:#161616; border:0; font-weight:700; }
+.btn.ghost { background: rgba(255,255,255,.04); }
+.section { max-width:1100px; margin:0 auto; padding: 4rem 1rem; }
+.section h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-top:0; }
+.problem p, .trust p, .final-cta p { color: var(--muted); }
+.cards .grid, .reviews .grid {
+  display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+article, blockquote {
+  margin:0; background: linear-gradient(180deg, #1a2130, #131925);
+  border:1px solid #28334a; border-radius:16px; padding:1rem;
+}
+article h3 { margin-top:0; }
+.trust ul { padding-left: 1rem; color: var(--muted); }
+.final-cta { text-align:center; padding-bottom:5rem; }
+@media (max-width: 600px){
+  .hero { min-height: auto; }
+  .topbar { gap: .5rem; }
+}

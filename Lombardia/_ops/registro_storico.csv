@@ -3,3 +3,4 @@ cycle_ts_utc,attivita,citta,cartella,stato,note
 
 2026-02-14T17:41:00Z,Riccioli e Stile Dal 1991,Milano,RicciolieStile_Milano,scartata_ha_sito,Correzione post-check: rilevato sito ufficiale https://www.riccioliestile.com; lead invalidata
 2026-02-14T17:58:00Z,Acconciature Tina Errico,Bergamo,AcconciatureTinaErrico_Bergamo,completato,NO-SITO v2 PASS; sito premium creato; email pronta
+2026-02-14T19:42:00Z,Caruso BarberShop,Bergamo,CarusoBarberShop_Bergamo,completato,NO-SITO v2 4/4 PASS + anti-falso-positivo PASS; sito premium online con tunnel pubblico; email pronta

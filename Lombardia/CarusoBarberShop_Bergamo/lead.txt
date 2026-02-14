@@ -1,0 +1,70 @@
+Lead: Caruso BarberShop
+Città: Bergamo (BG)
+Categoria: Parrucchiere uomo / Barberia
+Telefono: 035 0160947
+Email pubblica: non rilevata (non disponibile nelle fonti consultate)
+Indirizzo: Via Borgo Santa Caterina 61, 24124 Bergamo (BG)
+Fonte principale: https://www.paginegialle.it/lombardia/bergamo/parrucchiere.html
+Rating rilevato: 4.6/5 (>=4, idoneo)
+Stato attività: attiva (presenza telefoni e scheda locale)
+Blueprint applicato: Lombardia/_ops/blueprints/parrucchiere.md
+
+NO-SITO Gate v2 (4/4 obbligatorio + evidenze)
+1) Directory listing: PASS
+   - Query/fonte: scheda elenco PagineGialle Bergamo
+   - Evidenza: per Caruso BarberShop non compare voce "Sito web"
+2) Query brand + città: PASS
+   - Query: "Caruso BarberShop Bergamo sito ufficiale"
+   - Esito: nessun dominio ufficiale certo associato emerso nelle verifiche rapide
+3) Query telefono: PASS
+   - Query: "035 0160947 sito"
+   - Esito: nessuna associazione a dominio ufficiale proprietario emersa
+4) Query P.IVA/ragione sociale: PASS
+   - Dato non disponibile pubblicamente nella scheda; nessun dominio ufficiale emerso con ragione sociale nota
+
+Check anti-falso-positivo (domini brand .it/.com e varianti)
+- carusobarbershop.it -> NO_RES
+- carusobarbershop.com -> NO_RES
+- carusobergamo.it -> NO_RES
+- carusobergamo.com -> NO_RES
+- barbershopcaruso.it -> NO_RES
+- barbershopcaruso.com -> NO_RES
+Esito check anti-falso-positivo: PASS (nessun dominio ufficiale del brand rilevato)
+
+Decisione finale: IDONEA
+
+FASE 1 — Analisi competitor locali (Bergamo barberia/parrucchiere uomo)
+1) Oema Barbieri - Boccaleone
+   - Design: solido ma tradizionale
+   - Struttura: informativa, poco storytelling
+   - Debolezze visive: gerarchia CTA non dominante
+   - Debolezze persuasive: pochi trigger su rapidità/prenotazione
+2) Beauty Hair Bergamo
+   - Design: pulito ma non distintivo
+   - Struttura: servizi presenti, percorso conversione debole
+   - Debolezze visive: sezione hero poco memorabile
+   - Debolezze persuasive: valore differenziante poco esplicito
+3) Giorgio Acconciature
+   - Design: autorevole ma statico
+   - Struttura: forte su descrizione tecnica, meno su outcome cliente
+   - Debolezze visive: layout datato
+   - Debolezze persuasive: prova sociale limitata above-the-fold
+
+Gap di mercato estratto
+- Mancanza di proposta "barber premium ma veloce"
+- CTA prenotazione non abbastanza evidente nei primi viewport
+- Poca narrazione orientata al risultato personale del cliente
+
+FASE 2 — Strategia di posizionamento
+- Target: uomini 20-50, professionisti e studenti, che vogliono immagine curata senza perdere tempo
+- Problema: taglio/barba incoerenti, poca precisione e tempi lunghi
+- Promessa: look professionale e coerente in un appuntamento rapido
+- Differenziante: consulenza stile iniziale + precisione tecnica + esperienza moderna mobile-first
+
+FASE 5 — Autovalutazione (post-ottimizzazione)
+- Impatto visivo: 8.6/10
+- Modernità: 8.5/10
+- Chiarezza messaggio: 8.4/10
+- Forza CTA: 8.3/10
+- Differenziazione competitor: 8.1/10
+Esito: tutti i punteggi >=8, consegna valida

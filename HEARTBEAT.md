@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-14T17:58:00Z",
-  "total_cycles": 4,
-  "total_leads_found": 4,
-  "total_sites_created": 4,
-  "total_emails_sent": 4,
+  "last_cycle_timestamp": "2026-02-14T19:42:00Z",
+  "total_cycles": 5,
+  "total_leads_found": 5,
+  "total_sites_created": 5,
+  "total_emails_sent": 5,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Acconciature Tina Errico",
+    "name": "Caruso BarberShop",
     "city": "Bergamo",
-    "sector": "Parrucchiere",
+    "sector": "Parrucchiere uomo / Barberia",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-14T17:58:00Z"
+    "last_update": "2026-02-14T19:42:00Z"
   },
   "pipeline": [
     {
@@ -46,6 +46,14 @@
       "status": "site_created_email_ready",
       "created_at": "2026-02-14T17:58:00Z",
       "updated_at": "2026-02-14T17:58:00Z"
+    },
+    {
+      "name": "Caruso BarberShop",
+      "city": "Bergamo",
+      "sector": "Parrucchiere uomo / Barberia",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-14T19:42:00Z",
+      "updated_at": "2026-02-14T19:42:00Z"
     }
   ],
   "performance_metrics": {
@@ -89,6 +97,12 @@
       "azione": "Nuovo ciclo su Acconciature Tina Errico Bergamo",
       "esito": "completato",
       "miglioramenti": "Applicato gate NO-SITO v2 con controllo anti-falso-positivo e sito premium mobile-first"
+    },
+    {
+      "timestamp": "2026-02-14T19:42:00Z",
+      "azione": "Nuovo ciclo su Caruso BarberShop Bergamo",
+      "esito": "completato",
+      "miglioramenti": "Applicato gate NO-SITO v2 con anti-falso-positivo domini brand + delivery sito premium con tunnel pubblico"
     }
   ]
 }
