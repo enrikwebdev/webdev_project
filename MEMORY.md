@@ -15,6 +15,7 @@
 - Richiede miglioramento continuo e tracciamento storico dei cicli.
 - Vuole che memoria e file interni vengano aggiornati costantemente in base alle sue richieste.
 - Direttiva permanente: memorizzare tutte le sue indicazioni operative e usarle per miglioramento continuo.
+- Nei siti, se disponibili recensioni Google, includere testimonianze positive in sezione clienti soddisfatti.
 
 ## Operating Notes
 - In caso di dubbio su presenza sito: scartare lead (SCARTATA_HA_SITO).

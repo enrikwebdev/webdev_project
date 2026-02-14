@@ -41,6 +41,12 @@ Obiettivo: ogni sito deve sembrare prodotto da web agency high-end, con focus co
 - Prova sociale (realistica)
 - CTA finale
 
+### Regola recensioni
+- Se disponibili recensioni Google positive, inserirle in sezione "Clienti soddisfatti".
+- Usare solo recensioni positive pertinenti al servizio.
+- Mantenere testo fedele alla fonte o parafrasi non fuorviante.
+- Evitare recensioni inventate quando sono disponibili recensioni reali.
+
 ## 8) SEO locale
 - Città + provincia naturali nei testi
 - H1 ottimizzato
