@@ -8,11 +8,11 @@
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Riccioli e Stile Dal 1991",
-    "city": "Milano",
-    "sector": "Parrucchiere (specialista riccio)",
+    "name": "Parrucchiera Afra",
+    "city": "Brescia",
+    "sector": "Parrucchiere",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-14T17:41:00Z"
+    "last_update": "2026-02-14T18:00:00Z"
   },
   "pipeline": [
     {
@@ -35,9 +35,9 @@
       "name": "Riccioli e Stile Dal 1991",
       "city": "Milano",
       "sector": "Parrucchiere",
-      "status": "site_created_email_ready",
+      "status": "scartata_ha_sito_post_check",
       "created_at": "2026-02-14T17:41:00Z",
-      "updated_at": "2026-02-14T17:41:00Z"
+      "updated_at": "2026-02-14T18:00:00Z"
     }
   ],
   "performance_metrics": {
@@ -69,6 +69,12 @@
       "azione": "Nuovo ciclo su Riccioli e Stile Milano",
       "esito": "completato",
       "miglioramenti": "Posizionamento verticale capelli ricci + tunnel pubblico temporaneo trycloudflare"
+    },
+    {
+      "timestamp": "2026-02-14T18:00:00Z",
+      "azione": "Correzione qualifica lead Riccioli e Stile",
+      "esito": "scartata_ha_sito",
+      "miglioramenti": "Aggiunto controllo dominio brand (.it/.com) nel gate NO-SITO per evitare falsi positivi"
     }
   ]
 }

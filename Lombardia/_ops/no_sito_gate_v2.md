@@ -8,6 +8,10 @@ Una lead è IDONEA solo se **4/4 check = PASS** con evidenze salvate in `lead.tx
 3. Query telefono: nessun dominio ufficiale associato
 4. Query P.IVA/ragione sociale (se disponibile): nessun dominio ufficiale
 
+## Check anti-falso-positivo (obbligatorio)
+- Verifica esplicita domini brand: `brandname.it`, `brandname.com` e varianti principali del nome attività.
+- Se uno dei domini risponde e corrisponde all’attività => **SCARTATA_HA_SITO**.
+
 ## Regola di decisione
 - 4 PASS => IDONEA
 - <4 PASS => SCARTATA_HA_SITO

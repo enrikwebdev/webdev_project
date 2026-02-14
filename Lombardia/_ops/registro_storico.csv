@@ -1,4 +1,4 @@
 cycle_ts_utc,attivita,citta,cartella,stato,note
 2026-02-14T15:18:00Z,Parrucchiera Afra,Brescia,ParrucchieraAfra_Brescia,completato,Lead selezionata con rating 4.9/5 e assenza sito professionale rilevata
 
-2026-02-14T17:41:00Z,Riccioli e Stile Dal 1991,Milano,RicciolieStile_Milano,completato,NO-SITO 4/4 PASS; sito premium creato; email proposta pronta
+2026-02-14T17:41:00Z,Riccioli e Stile Dal 1991,Milano,RicciolieStile_Milano,scartata_ha_sito,Correzione post-check: rilevato sito ufficiale https://www.riccioliestile.com; lead invalidata
