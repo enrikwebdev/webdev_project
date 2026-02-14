@@ -21,6 +21,8 @@
 - Richiede logo dedicato in testata per ogni attività (wordmark/monogram coerente col brand).
 - Evitare animazioni "pacchiane": motion premium sobrio/elegante.
 - Evitare box puramente testuali: preferire sezioni storytelling visual-first (immagine/video + copy breve + proof/CTA) per mantenere impatto premium.
+- Aspettativa qualità: i prossimi siti devono partire già con qualità pari o superiore al livello attuale, senza step intermedi mediocri.
+- Media policy avanzata: quando disponibili foto online ufficiali e realmente valorizzanti (negozio/lavori), preferirle rispetto allo stock; usare stock solo se migliore per resa premium o se le foto ufficiali non sono adeguate.
 
 ## Operating Notes
 - In caso di dubbio su presenza sito: scartare lead (SCARTATA_HA_SITO).
