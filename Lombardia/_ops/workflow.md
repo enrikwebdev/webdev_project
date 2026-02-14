@@ -19,6 +19,12 @@ Standard obbligatori:
 - `Lombardia/_ops/blueprints/*` (in base al settore)
 - Stack frontend elite obbligatorio per build premium: `_stack/frontend-elite` (React+Vite+Tailwind+Framer Motion)
 
+Squadra agenti specialistici (uso consigliato):
+- `Lombardia/_ops/agents/lead_qualifier.md`
+- `Lombardia/_ops/agents/benchmark_strategy.md`
+- `Lombardia/_ops/agents/premium_builder.md`
+- `Lombardia/_ops/agents/qa_delivery.md`
+
 Vincoli:
 - Non duplicare attività già lavorate
 - Mantenere registro storico
