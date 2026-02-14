@@ -27,6 +27,7 @@ Obiettivo: ogni sito deve sembrare prodotto da web agency high-end, con focus co
 - Hover eleganti
 - Transizioni fluide (150–250ms)
 - Animazioni leggere e non invasive
+- Preferire implementazione con stack frontend elite (React + Tailwind + Framer Motion) quando utile a qualità/velocità
 
 ## 6) Hero obbligatoria
 - Titolo potente
