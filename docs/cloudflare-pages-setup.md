@@ -1,5 +1,8 @@
 # Cloudflare Pages (free) – link stabili per ~14 giorni
 
+> Nota operativa: il Cloudflare Dashboard può attivare challenge anti-bot in headless.
+> Se la configurazione si blocca, usa **GitHub Pages** (gratis) con deploy via Actions: `docs/github-pages-setup.md`.
+
 Obiettivo: avere URL stabili (senza trycloudflare) per mostrare demo siti in `projects/sites/active/*`.
 
 ## Struttura

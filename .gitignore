@@ -1,0 +1,17 @@
+# Root ignores (repo hygiene)
+
+# Build output for demo hosting (generated)
+pages_dist/
+
+# OS/editor
+.DS_Store
+*.swp
+
+# Node
+**/node_modules/
+**/dist/
+
+# Test/QA artifacts
+**/playwright-report/
+**/test-results/
+**/.lighthouseci/

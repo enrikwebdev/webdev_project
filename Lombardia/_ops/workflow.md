@@ -2,7 +2,11 @@
 
 1. Ricerca nuova attività in Lombardia
 2. Selezione migliore opportunità
-3. **STOP + Verifica browser obbligatoria**: se emerge un dominio anche solo plausibile, aprilo e verifica contatti (telefono/P.IVA/indirizzo). Se confermato => SCARTATA_HA_SITO.
+3. **CHECK 0 (pre-gate) — BLOCCANTE**: eseguire fail-fast su domini plausibili.
+   - Comando: `node scripts/check0-pre-gate.mjs --name "NOME" --city "CITTÀ" --phone "TEL" --piva "PIVA"`
+   - Se exit code = 2 (o output `STOP_MANUAL_VERIFY`) ⇒ **STOP + Verifica browser obbligatoria**: apri il dominio e verifica contatti (telefono/P.IVA/indirizzo). Se confermato ⇒ SCARTATA_HA_SITO.
+   - Salvare JSON (o estratto) in `lead.txt` come evidenza.
+4. **STOP + Verifica browser obbligatoria**: se durante i check 1-4 emerge un dominio anche solo plausibile, aprilo e verifica contatti (telefono/P.IVA/indirizzo). Se confermato => SCARTATA_HA_SITO.
 4. **Ricerca ispirazionale obbligatoria** (2-5 benchmark siti top di settore: storytelling, UX, visual, CTA)
 5. **Analisi competitor locale (3 competitor) + strategia posizionamento**
 6. Creazione sito (contenuti originali) in modalità Elite Agency
