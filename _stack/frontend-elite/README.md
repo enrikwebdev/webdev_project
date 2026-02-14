@@ -1,16 +1,14 @@
-# React + Vite
+# Frontend Elite (React + Vite + Tailwind + Framer Motion)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stack pronto per esperienze premium e animazioni moderne.
 
-Currently, two official plugins are available:
+## Google OAuth setup
+1. Crea credenziali **OAuth Client ID (Web application)** su Google Cloud Console.
+2. Aggiungi gli Authorized JavaScript origins (es. `http://localhost:5173`).
+3. Copia `.env.example` in `.env`.
+4. Inserisci il tuo client ID:
+   - `VITE_GOOGLE_CLIENT_ID=...apps.googleusercontent.com`
+5. Avvia:
+   - `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Login Google già integrato in `src/App.jsx` tramite `@react-oauth/google`.
