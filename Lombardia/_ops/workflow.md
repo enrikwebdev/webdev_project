@@ -14,7 +14,7 @@ Standard obbligatori:
 - `Lombardia/_ops/no_sito_gate_v2.md`
 - `Lombardia/_ops/outreach_engine.md`
 - `Lombardia/_ops/blueprints/*` (in base al settore)
-- Stack frontend elite quando necessario: `_stack/frontend-elite` (React+Vite+Tailwind+Framer Motion)
+- Stack frontend elite obbligatorio per build premium: `_stack/frontend-elite` (React+Vite+Tailwind+Framer Motion)
 
 Vincoli:
 - Non duplicare attività già lavorate
