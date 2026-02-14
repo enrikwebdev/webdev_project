@@ -12,3 +12,5 @@ Stack pronto per esperienze premium e animazioni moderne.
    - `npm run dev`
 
 Login Google già integrato in `src/App.jsx` tramite `@react-oauth/google`.
+
+> Nota sicurezza: il **Client Secret non va mai nel frontend**. Usalo solo lato server (backend) per flow OAuth server-side.
