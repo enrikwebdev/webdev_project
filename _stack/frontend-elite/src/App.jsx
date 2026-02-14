@@ -267,12 +267,28 @@ export default function App() {
     </button>
   )
 
+  const sectionLabel =
+    route === '/'
+      ? 'Home'
+      : route === '/trattamenti'
+        ? 'Trattamenti'
+        : route === '/dove-siamo'
+          ? 'Dove siamo'
+          : route === '/chi-siamo'
+            ? 'Chi siamo'
+            : route === '/blog'
+              ? 'Blog'
+              : route === '/prenota'
+                ? 'Prenota'
+                : 'Home'
+
   return (
     <main className="min-h-screen bg-[#0a0a0b] text-[#f5f3ef]">
       <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0a0a0b]/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
           <button onClick={() => go('/')}><Logo /></button>
           <nav className="hidden gap-2 text-sm md:flex">
+            <Link to="/">Home</Link>
             <Link to="/trattamenti">Trattamenti</Link>
             <Link to="/dove-siamo">Dove siamo</Link>
             <Link to="/chi-siamo">Chi siamo</Link>
@@ -284,6 +300,7 @@ export default function App() {
 
         <div className="md:hidden overflow-x-auto px-4 pb-3">
           <div className="flex w-max gap-2 text-xs">
+            <Link to="/">Home</Link>
             <Link to="/trattamenti">Trattamenti</Link>
             <Link to="/dove-siamo">Dove siamo</Link>
             <Link to="/chi-siamo">Chi siamo</Link>
@@ -292,6 +309,14 @@ export default function App() {
           </div>
         </div>
       </header>
+
+      <div className="border-b border-white/10 bg-[#0f0f11] px-4 py-2 text-xs text-[#c8c2b5] md:px-6">
+        <div className="mx-auto flex max-w-7xl items-center gap-2">
+          <button onClick={() => go('/')} className="underline-offset-2 hover:text-amber-300 hover:underline">Home</button>
+          <span>/</span>
+          <span className="font-semibold text-amber-200">{sectionLabel}</span>
+        </div>
+      </div>
 
       <PageShell>{page}</PageShell>
 
