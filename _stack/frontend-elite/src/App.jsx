@@ -149,7 +149,6 @@ function TrattamentiPage() {
         <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Trattamenti</p>
         <h1 className="mt-3 text-5xl font-black">Servizi premium uomo</h1>
       </div>
-
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {services.map(([t, d, img]) => (
           <article key={t} data-reveal className="overflow-hidden rounded-3xl border border-white/10 bg-[#111113]">
@@ -160,6 +159,25 @@ function TrattamentiPage() {
             </div>
           </article>
         ))}
+      </div>
+    </section>
+  )
+}
+
+function DoveSiamoPage() {
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-16">
+      <div className="grid gap-6 md:grid-cols-2">
+        <figure data-reveal className="overflow-hidden rounded-3xl border border-white/10">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=80" alt="Borgo Santa Caterina Bergamo" className="h-full min-h-[340px] w-full object-cover" />
+        </figure>
+        <div data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-8 md:p-10">
+          <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Dove siamo</p>
+          <h1 className="mt-3 text-5xl font-black leading-tight">Borgo Santa Caterina, Bergamo</h1>
+          <p className="mt-6 text-lg text-[#d3cec4]">Via Borgo Santa Caterina 61, 24124 Bergamo (BG). Posizione comoda e facilmente raggiungibile.</p>
+          <p className="mt-3 text-[#d3cec4]"><strong>Telefono:</strong> 035 0160947</p>
+          <a href="tel:+390350160947" className="mt-7 inline-block rounded-full bg-amber-300 px-6 py-3 text-sm font-bold text-black">Chiama ora</a>
+        </div>
       </div>
     </section>
   )
@@ -200,7 +218,6 @@ function BlogPage() {
         <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Blog</p>
         <h1 className="mt-3 text-5xl font-black">Consigli grooming & stile</h1>
       </div>
-
       <div className="mt-10 grid gap-5 md:grid-cols-3">
         {posts.map(([t, d, img]) => (
           <article key={t} data-reveal className="overflow-hidden rounded-3xl border border-white/10 bg-[#111113]">
@@ -237,6 +254,7 @@ export default function App() {
 
   const page = useMemo(() => {
     if (route === '/trattamenti') return <TrattamentiPage />
+    if (route === '/dove-siamo') return <DoveSiamoPage />
     if (route === '/chi-siamo') return <ChiSiamoPage />
     if (route === '/blog') return <BlogPage />
     if (route === '/prenota') return <PrenotaPage />
@@ -244,21 +262,34 @@ export default function App() {
   }, [route])
 
   const Link = ({ to, children }) => (
-    <button onClick={() => go(to)} className="hover:text-amber-300">{children}</button>
+    <button onClick={() => go(to)} className={`whitespace-nowrap rounded-full px-3 py-1.5 ${route === to ? 'bg-amber-300 text-black' : 'hover:text-amber-300'}`}>
+      {children}
+    </button>
   )
 
   return (
     <main className="min-h-screen bg-[#0a0a0b] text-[#f5f3ef]">
-      <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0a0a0b]/85 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <header className="sticky top-0 z-30 border-b border-white/10 bg-[#0a0a0b]/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
           <button onClick={() => go('/')}><Logo /></button>
-          <nav className="hidden gap-6 text-sm md:flex">
+          <nav className="hidden gap-2 text-sm md:flex">
             <Link to="/trattamenti">Trattamenti</Link>
+            <Link to="/dove-siamo">Dove siamo</Link>
             <Link to="/chi-siamo">Chi siamo</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/prenota">Prenota</Link>
           </nav>
           <a href="tel:+390350160947" className="rounded-full border border-amber-300/60 px-4 py-2 text-xs font-semibold text-amber-200 hover:bg-amber-300 hover:text-black">Chiama</a>
+        </div>
+
+        <div className="md:hidden overflow-x-auto px-4 pb-3">
+          <div className="flex w-max gap-2 text-xs">
+            <Link to="/trattamenti">Trattamenti</Link>
+            <Link to="/dove-siamo">Dove siamo</Link>
+            <Link to="/chi-siamo">Chi siamo</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/prenota">Prenota</Link>
+          </div>
         </div>
       </header>
 
