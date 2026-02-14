@@ -2,61 +2,11 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Float, Environment } from '@react-three/drei'
-import * as THREE from 'three'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function HeroOrb() {
-  const mesh = useRef()
-  useFrame((state, delta) => {
-    if (!mesh.current) return
-    mesh.current.rotation.y += delta * 0.35
-    mesh.current.rotation.x += delta * 0.15
-    mesh.current.position.y = Math.sin(state.clock.elapsedTime * 0.9) * 0.08
-  })
-
-  return (
-    <Float speed={1.2} rotationIntensity={0.25} floatIntensity={0.35}>
-      <mesh ref={mesh}>
-        <icosahedronGeometry args={[1.35, 2]} />
-        <meshPhysicalMaterial
-          color="#7dd3fc"
-          metalness={0.15}
-          roughness={0.2}
-          transmission={0.35}
-          thickness={1.2}
-          transparent
-          opacity={0.9}
-          envMapIntensity={1.3}
-        />
-      </mesh>
-      <mesh position={[0, 0, -0.9]}>
-        <sphereGeometry args={[0.55, 32, 32]} />
-        <meshStandardMaterial color="#ec4899" emissive="#ec4899" emissiveIntensity={0.15} />
-      </mesh>
-    </Float>
-  )
-}
-
-function Hero3D() {
-  return (
-    <div className="h-[420px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-[#090d18] md:h-[520px]">
-      <Canvas camera={{ position: [0, 0, 4.2], fov: 45 }} dpr={[1, 1.5]}>
-        <color attach="background" args={['#090d18']} />
-        <ambientLight intensity={0.55} />
-        <directionalLight position={[3, 2, 4]} intensity={1.2} color={new THREE.Color('#67e8f9')} />
-        <pointLight position={[-2, -1, 2]} intensity={0.9} color={new THREE.Color('#f472b6')} />
-        <HeroOrb />
-        <Environment preset="city" />
-      </Canvas>
-    </div>
-  )
-}
-
 export default function App() {
-  const hero3DRef = useRef(null)
+  const heroImageRef = useRef(null)
   const heroTitleRef = useRef(null)
   const revealRefs = useRef([])
   const parallaxRefs = useRef([])
@@ -75,26 +25,39 @@ export default function App() {
     }
     rafId = requestAnimationFrame(raf)
 
-    gsap.fromTo(heroTitleRef.current, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' })
-
+    // Hero cinematic intro
     gsap.fromTo(
-      hero3DRef.current,
-      { scale: 1.08, opacity: 0.6, rotate: -1.5 },
-      { scale: 1, opacity: 1, rotate: 0, duration: 1.2, ease: 'power3.out' },
+      heroTitleRef.current,
+      { y: 40, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
     )
 
-    gsap.to(hero3DRef.current, {
-      scale: 0.92,
-      yPercent: -10,
+    gsap.fromTo(
+      heroImageRef.current,
+      { scale: 1.18, opacity: 0.75, rotate: -2 },
+      {
+        scale: 1,
+        opacity: 1,
+        rotate: 0,
+        duration: 1.3,
+        ease: 'power3.out',
+      },
+    )
+
+    // Apple-like scrub on hero image
+    gsap.to(heroImageRef.current, {
+      scale: 0.9,
+      yPercent: -12,
       ease: 'none',
       scrollTrigger: {
-        trigger: hero3DRef.current,
+        trigger: heroImageRef.current,
         start: 'top top',
         end: 'bottom top',
         scrub: true,
       },
     })
 
+    // Section reveals
     revealRefs.current.forEach((el) => {
       if (!el) return
       gsap.fromTo(
@@ -105,11 +68,15 @@ export default function App() {
           y: 0,
           duration: 0.9,
           ease: 'power3.out',
-          scrollTrigger: { trigger: el, start: 'top 82%' },
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 82%',
+          },
         },
       )
     })
 
+    // Parallax media blocks
     parallaxRefs.current.forEach((el) => {
       if (!el) return
       gsap.fromTo(
@@ -118,7 +85,12 @@ export default function App() {
         {
           yPercent: -12,
           ease: 'none',
-          scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true },
+          scrollTrigger: {
+            trigger: el,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: true,
+          },
         },
       )
     })
@@ -140,6 +112,7 @@ export default function App() {
 
   return (
     <main className="bg-[#04060f] text-white">
+      {/* HERO */}
       <section className="relative min-h-screen overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_0%,rgba(56,189,248,0.28),transparent_35%),radial-gradient(circle_at_15%_0%,rgba(244,63,94,0.25),transparent_35%)]" />
         <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-between px-6 pb-10 pt-20">
@@ -159,12 +132,20 @@ export default function App() {
             </div>
           </div>
 
-          <div ref={hero3DRef} className="mt-8 md:mt-0">
-            <Hero3D />
+          <div className="mt-8 md:mt-0">
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl shadow-black/50">
+              <img
+                ref={heroImageRef}
+                src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1800&q=80"
+                alt="Barber premium in azione"
+                className="h-[44vh] w-full object-cover md:h-[52vh]"
+              />
+            </div>
           </div>
         </div>
       </section>
 
+      {/* VALUE STORY */}
       <section id="esperienza" className="mx-auto max-w-7xl px-6 py-24 md:py-32">
         <div ref={setRevealRef} className="mb-14">
           <p className="text-xs uppercase tracking-[0.22em] text-cyan-300">Problema → Soluzione</p>
@@ -189,6 +170,7 @@ export default function App() {
         </div>
       </section>
 
+      {/* PARALLAX STRIP */}
       <section className="mx-auto grid max-w-7xl gap-6 px-6 pb-12 md:grid-cols-2">
         <div ref={setParallaxRef} className="overflow-hidden rounded-3xl border border-white/10">
           <img
@@ -208,6 +190,7 @@ export default function App() {
         </div>
       </section>
 
+      {/* SOCIAL PROOF */}
       <section id="recensioni" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div ref={setRevealRef}>
           <p className="text-xs uppercase tracking-[0.22em] text-cyan-300">Clienti soddisfatti</p>
@@ -228,6 +211,7 @@ export default function App() {
         </div>
       </section>
 
+      {/* FINAL CTA */}
       <section className="mx-auto max-w-7xl px-6 pb-24 md:pb-32">
         <div ref={setRevealRef} className="rounded-[2rem] border border-white/10 bg-gradient-to-r from-slate-900 via-blue-950/60 to-slate-900 p-10 text-center md:p-14">
           <h2 className="text-4xl font-black md:text-6xl">Prenota il tuo prossimo taglio</h2>
