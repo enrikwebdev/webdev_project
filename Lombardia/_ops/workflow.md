@@ -2,16 +2,18 @@
 
 1. Ricerca nuova attività in Lombardia
 2. Selezione migliore opportunità
-3. **Ricerca ispirazionale obbligatoria** (2-5 benchmark siti top di settore: storytelling, UX, visual, CTA)
-4. **Analisi competitor locale (3 competitor) + strategia posizionamento**
-5. Creazione sito (contenuti originali) in modalità Elite Agency
+3. **STOP + Verifica browser obbligatoria**: se emerge un dominio anche solo plausibile, aprilo e verifica contatti (telefono/P.IVA/indirizzo). Se confermato => SCARTATA_HA_SITO.
+4. **Ricerca ispirazionale obbligatoria** (2-5 benchmark siti top di settore: storytelling, UX, visual, CTA)
+5. **Analisi competitor locale (3 competitor) + strategia posizionamento**
+6. Creazione sito (contenuti originali) in modalità Elite Agency
    - Default obbligatorio: storytelling visual-first (immagine/video + copy breve + proof + CTA), NO box solo testo
+   - Default obbligatorio: contenuti specifici e credibili (servizi reali, dettagli utili, trust)
    - Default obbligatorio: qualità almeno pari/superiore al miglior sito precedente approvato
-6. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
-7. Scrittura `proposta_email.txt`
-8. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)
-9. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse)
-10. Log su `Lombardia/_ops/registro_storico.csv`
+7. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
+8. Scrittura `proposta_email.txt`
+9. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)
+10. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse + asset check)
+11. Log su `Lombardia/_ops/registro_storico.csv`
 
 Standard obbligatori:
 - `Lombardia/_ops/design_standard_2025_2026.md`

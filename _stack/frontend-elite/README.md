@@ -13,4 +13,4 @@ Le integrazioni Google (Sheets, Storage, ecc.) sono riservate a tooling interno/
 ## QA avanzato (modalità light)
 - `npm run qa:pw` → smoke test Playwright (desktop+mobile)
 - `npm run qa:lh` → Lighthouse CI (performance/accessibilità/SEO)
-- `npm run qa:light` → build + smoke + lighthouse
+- `npm run qa:light` → build + asset check + smoke + lighthouse

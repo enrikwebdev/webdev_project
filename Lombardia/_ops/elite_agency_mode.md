@@ -57,10 +57,10 @@ Output minimo da salvare: sezione "Strategia Posizionamento" in `lead.txt`.
 - 1 accento
 - Dark mode opzionale se coerente
 
-### 6) Prova sociale
-- Recensioni simulate realistiche
-- Sezione fiducia
-- Badge affidabilità
+### 6) Prova sociale + trust kit
+- Se disponibili recensioni Google positive: inserirle (priorità)
+- Altrimenti: testimonianze sobrie e plausibili (no frasi troppo perfette)
+- Trust kit: “solo su appuntamento” se coerente, qualità prodotti, igiene/comfort, tempi, badge
 
 ### 7) Sequenza persuasiva obbligatoria
 - Problema

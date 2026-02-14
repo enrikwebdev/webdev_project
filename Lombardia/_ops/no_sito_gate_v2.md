@@ -21,7 +21,11 @@ Una lead è IDONEA solo se **4/4 check = PASS** con evidenze salvate in `lead.tx
   - `"Nome Attività" sito`
   - `"Nome Attività" .com` e `"Nome Attività" .it`
   - `"Telefono" sito`
-- Se emerge un dominio plausibile, aprilo e verifica header/footer/contatti.
+- Se emerge un dominio plausibile: **STOP + verifica browser obbligatoria**
+  - apri il sito
+  - controlla footer/contatti
+  - matcha almeno 1 tra: telefono / P.IVA / indirizzo
+  - se match => **SCARTATA_HA_SITO**
 
 ## Regola di decisione
 - 4 PASS => IDONEA
