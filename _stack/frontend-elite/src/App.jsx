@@ -121,14 +121,14 @@ function Home() {
           badge="02 · Esecuzione"
           title="Linee pulite, sfumature controllate, dettaglio premium"
           text="Tecnica e precisione per un risultato elegante subito visibile, con transizioni pulite e finitura professionale."
-          image="https://images.unsplash.com/photo-1512690459411-b0fd1c86b8a8?auto=format&fit=crop&w=1400&q=80"
+          image="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1400&q=80"
         />
 
         <VisualStoryBlock
           badge="03 · Risultato"
           title="Look forte oggi, mantenibile domani"
           text="Ti consegniamo uno stile che regge nel quotidiano: più presenza, più coerenza, meno tempo perso davanti allo specchio."
-          image="https://images.unsplash.com/photo-1503951458645-643d53d661c5?auto=format&fit=crop&w=1400&q=80"
+          image="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1400&q=80"
         />
       </section>
     </>
@@ -170,7 +170,7 @@ function ChiSiamoPage() {
     <section className="mx-auto max-w-7xl px-6 py-16">
       <div className="grid gap-6 md:grid-cols-2">
         <figure data-reveal className="overflow-hidden rounded-3xl border border-white/10">
-          <img src="https://images.unsplash.com/photo-1589985270958-b3f8f5cb7f44?auto=format&fit=crop&w=1400&q=80" alt="Team barber" className="h-full w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1400&q=80" alt="Team barber" className="h-full w-full object-cover" />
         </figure>
         <div data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-8 md:p-10">
           <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Chi siamo</p>
