@@ -5,6 +5,8 @@
 3. **Ricerca ispirazionale obbligatoria** (2-5 benchmark siti top di settore: storytelling, UX, visual, CTA)
 4. **Analisi competitor locale (3 competitor) + strategia posizionamento**
 5. Creazione sito (contenuti originali) in modalità Elite Agency
+   - Default obbligatorio: storytelling visual-first (immagine/video + copy breve + proof + CTA), NO box solo testo
+   - Default obbligatorio: qualità almeno pari/superiore al miglior sito precedente approvato
 6. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
 7. Scrittura `proposta_email.txt`
 8. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)

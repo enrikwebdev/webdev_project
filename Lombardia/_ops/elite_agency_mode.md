@@ -38,6 +38,7 @@ Output minimo da salvare: sezione "Strategia Posizionamento" in `lead.txt`.
 - Griglie asimmetriche dove utile
 - Spazio bianco intelligente
 - Evitare look da template generico
+- Vietati blocchi composti da solo testo: usare pattern storytelling visual-first (media + headline + proof + CTA)
 
 ### 3) Tipografia strategica
 - H1/H2 forti

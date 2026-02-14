@@ -12,3 +12,4 @@ Uso:
 2) Personalizza proposta valore locale (città/provincia)
 3) Inserisci differenziante emerso da competitor analysis
 4) Mantieni CTA primaria unica e ripetuta
+5) Default qualitativo obbligatorio: storytelling visual-first (media + headline + prova + CTA), evitando box solo testo
