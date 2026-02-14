@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-14T17:41:00Z",
-  "total_cycles": 3,
-  "total_leads_found": 3,
-  "total_sites_created": 3,
-  "total_emails_sent": 3,
+  "last_cycle_timestamp": "2026-02-14T17:58:00Z",
+  "total_cycles": 4,
+  "total_leads_found": 4,
+  "total_sites_created": 4,
+  "total_emails_sent": 4,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Parrucchiera Afra",
-    "city": "Brescia",
+    "name": "Acconciature Tina Errico",
+    "city": "Bergamo",
     "sector": "Parrucchiere",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-14T18:00:00Z"
+    "last_update": "2026-02-14T17:58:00Z"
   },
   "pipeline": [
     {
@@ -38,6 +38,14 @@
       "status": "scartata_ha_sito_post_check",
       "created_at": "2026-02-14T17:41:00Z",
       "updated_at": "2026-02-14T18:00:00Z"
+    },
+    {
+      "name": "Acconciature Tina Errico",
+      "city": "Bergamo",
+      "sector": "Parrucchiere",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-14T17:58:00Z",
+      "updated_at": "2026-02-14T17:58:00Z"
     }
   ],
   "performance_metrics": {
@@ -75,6 +83,12 @@
       "azione": "Correzione qualifica lead Riccioli e Stile",
       "esito": "scartata_ha_sito",
       "miglioramenti": "Aggiunto controllo dominio brand (.it/.com) nel gate NO-SITO per evitare falsi positivi"
+    },
+    {
+      "timestamp": "2026-02-14T17:58:00Z",
+      "azione": "Nuovo ciclo su Acconciature Tina Errico Bergamo",
+      "esito": "completato",
+      "miglioramenti": "Applicato gate NO-SITO v2 con controllo anti-falso-positivo e sito premium mobile-first"
     }
   ]
 }

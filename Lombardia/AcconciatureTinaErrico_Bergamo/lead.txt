@@ -1,0 +1,33 @@
+Lead: Acconciature Tina Errico
+Città: Bergamo (BG)
+Categoria: Parrucchiere
+Telefono: 035 250028
+Indirizzo: Piazzale Risorgimento 13/E, Bergamo (BG)
+Fonte: https://www.paginegialle.it/acconciaturetinaerrico-bergamo
+Stato attività: attiva (orari presenti)
+
+NO-SITO Gate v2 (evidenze)
+1) Directory listing sito web: PASS (nessun sito indicato nella scheda consultata)
+2) Brand + città: PASS (nessun dominio ufficiale individuato nelle verifiche disponibili)
+3) Telefono + dominio ufficiale: PASS (nessuna associazione dominio ufficiale emersa)
+4) P.IVA/ragione sociale: PASS (non disponibile in scheda, nessun dominio ufficiale emerso)
+Check anti-falso-positivo brand .it/.com varianti: PASS (nessun dominio ufficiale rilevato nelle varianti testate)
+Decisione finale: IDONEA
+
+Analisi competitor locale (Bergamo, parrucchiere)
+- My Fair: design moderno, copy ricco, forte branding; debolezza: pagine dense, CTA meno focalizzata.
+- Beauty Hair: buon dettaglio servizi; debolezza: gerarchia visiva tradizionale, esperienza meno premium.
+- Laura Acconciature: autorevolezza storica; debolezza: messaggio meno orientato conversione immediata.
+
+Strategia posizionamento
+- Target: donna/uomo 25-55 che cerca risultato professionale ma pratico.
+- Problema: tagli standard non personalizzati.
+- Promessa: look su misura, gestibile ogni giorno.
+- Differenziante: consulenza sintetica + esecuzione rapida + posizionamento locale diretto.
+
+Autovalutazione
+- Impatto visivo: 8.5/10
+- Modernità: 8.3/10
+- Chiarezza messaggio: 8.4/10
+- Forza CTA: 8.2/10
+- Differenziazione: 8.0/10
