@@ -57,9 +57,26 @@ Obiettivo: ogni sito deve sembrare prodotto da web agency high-end, con focus co
 - Font leggibili
 - Navigazione semplice da tastiera/touch
 
+## UX/UI best-practice obbligatorie (aggiornamento continuo)
+Riferimenti guida: NN/g (heuristics + scanning behavior), web.dev (Core Web Vitals).
+
+- **Gerarchia anti-scanning debole (F-pattern antidote):** primi 2 viewport con headline forti, sottotitoli, bullet benefici e CTA evidente.
+- **Nielsen Heuristics in pagina:**
+  - chiarezza stato/interazione (hover, feedback click, form states)
+  - coerenza label e pattern
+  - prevenzione errore (CTA non ambigue, percorsi semplici)
+  - minimalismo funzionale (niente rumore visivo)
+- **Mobile CTA ergonomiche:** target touch grandi, CTA primaria above-the-fold e ripetuta in punti strategici.
+- **Accessibilità minima:** contrasto elevato, tipografia leggibile, alt text, focus states.
+- **Performance target (Core Web Vitals):**
+  - LCP <= 2.5s
+  - INP <= 200ms
+  - CLS <= 0.1
+
 ## Quality gate pre-consegna
 - Impatto visivo: alto
 - Coerenza colori: alta
 - CTA: chiara e dominante
 - Velocità caricamento: rapida
+- Core Web Vitals target rispettati (quando misurabili)
 - Output percepito: valore >= 1500€
