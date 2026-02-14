@@ -11,8 +11,8 @@
     "name": "Laura Acconciature",
     "city": "Bergamo",
     "sector": "Parrucchiere",
-    "status": "site_created_email_ready",
-    "last_update": "2026-02-14T21:42:00Z"
+    "status": "scartata_ha_sito_post_check",
+    "last_update": "2026-02-14T22:02:17.179Z"
   },
   "pipeline": [
     {
@@ -59,9 +59,9 @@
       "name": "Laura Acconciature",
       "city": "Bergamo",
       "sector": "Parrucchiere",
-      "status": "site_created_email_ready",
+      "status": "scartata_ha_sito_post_check",
       "created_at": "2026-02-14T21:42:00Z",
-      "updated_at": "2026-02-14T21:42:00Z"
+      "updated_at": "2026-02-14T22:02:17.179Z"
     }
   ],
   "performance_metrics": {
@@ -117,6 +117,12 @@
       "azione": "Nuovo ciclo su Laura Acconciature Bergamo",
       "esito": "completato",
       "miglioramenti": "Applicato gate NO-SITO v2 completo + build React premium su stack frontend-elite con QA smoke e tunnel pubblico"
+    },
+    {
+      "timestamp": "2026-02-14T22:02:17.179Z",
+      "azione": "Correzione qualifica lead Laura Acconciature",
+      "esito": "scartata_ha_sito",
+      "miglioramenti": "Trovato sito ufficiale laurarosinaacconciature.com; da rafforzare gate con ricerca varianti nome + controllo P.IVA e città reale."
     }
   ]
 }

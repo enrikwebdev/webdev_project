@@ -27,7 +27,9 @@ Check anti-falso-positivo domini brand: PASS
 - Verificati: lauraacconciature.it/.com, laura-acconciature.it/.com
 - Esito tecnico: nessuna risposta valida (000) e nessuna corrispondenza ufficiale.
 
-DECISIONE FINALE: IDONEA (4/4 PASS)
+DECISIONE FINALE (REVISIONE POST-CHECK): SCARTATA_HA_SITO
+- Evidenza ufficiale rilevata: https://laurarosinaacconciature.com/
+- Nota qualità: il sito esistente ha livello professionale superiore alla proposta generata; lead invalidata e da escludere da futuri cicli.
 
 === FASE 1 ELITE — ANALISI COMPETITOR ===
 Competitor locali analizzati (Bergamo):

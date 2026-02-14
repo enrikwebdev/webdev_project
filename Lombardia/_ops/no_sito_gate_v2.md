@@ -10,7 +10,18 @@ Una lead è IDONEA solo se **4/4 check = PASS** con evidenze salvate in `lead.tx
 
 ## Check anti-falso-positivo (obbligatorio)
 - Verifica esplicita domini brand: `brandname.it`, `brandname.com` e varianti principali del nome attività.
-- Se uno dei domini risponde e corrisponde all’attività => **SCARTATA_HA_SITO**.
+- Verifica anche varianti comuni:
+  - aggiunta cognome/secondo nome (es. `nomecognome...`)
+  - aggiunta keyword settore (`parrucchiere`, `barber`, `salone`, `hair`)
+  - city mismatch check: se trova sito in altra città ma stesso nome/telefono/P.IVA => considerare ufficiale
+- Se uno dei domini risponde e corrisponde all’attività (brand/telefono/P.IVA/indirizzo) => **SCARTATA_HA_SITO**.
+
+## Check 0 (nuovo, pre-gate): ricerca diretta “dominio brand”
+- Query obbligatorie:
+  - `"Nome Attività" sito`
+  - `"Nome Attività" .com` e `"Nome Attività" .it`
+  - `"Telefono" sito`
+- Se emerge un dominio plausibile, aprilo e verifica header/footer/contatti.
 
 ## Regola di decisione
 - 4 PASS => IDONEA
