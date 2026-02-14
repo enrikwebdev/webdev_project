@@ -45,8 +45,8 @@ Output minimo da salvare: sezione "Strategia Posizionamento" in `lead.txt`.
 ### 4) Microinterazioni
 - Hover eleganti
 - Transizioni fluide
-- Scroll narrativo
-- Animazioni leggere
+- Scroll narrativo avanzato
+- Animazioni leggere ma premium (stile product showcase), sempre orientate a chiarezza e conversione
 
 ### 5) Palette colori studiata
 - 1 primario

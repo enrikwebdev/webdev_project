@@ -66,12 +66,18 @@ Riferimenti guida: NN/g (heuristics + scanning behavior), web.dev (Core Web Vita
   - coerenza label e pattern
   - prevenzione errore (CTA non ambigue, percorsi semplici)
   - minimalismo funzionale (niente rumore visivo)
+- **Storytelling premium tipo product-launch:**
+  - sequenza narrativa a blocchi (hook → valore → prova → CTA)
+  - sezioni hero cinematografiche con forte visual hierarchy
+  - scroll reveals eleganti (fade/translate/scale leggere) con timing fluido
+  - animazioni solo se migliorano comprensione e percezione premium
 - **Mobile CTA ergonomiche:** target touch grandi, CTA primaria above-the-fold e ripetuta in punti strategici.
 - **Accessibilità minima:** contrasto elevato, tipografia leggibile, alt text, focus states.
 - **Performance target (Core Web Vitals):**
   - LCP <= 2.5s
   - INP <= 200ms
   - CLS <= 0.1
+  - animazioni GPU-friendly (`transform`, `opacity`), no effetti pesanti bloccanti
 
 ## Quality gate pre-consegna
 - Impatto visivo: alto
