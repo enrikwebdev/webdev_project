@@ -2,16 +2,18 @@
 
 Obiettivo: non creare "un sito", ma uno strumento di acquisizione clienti ad alto valore percepito.
 
-## FASE 1 — Analisi competitor locale (obbligatoria)
+## FASE 1 — Analisi competitor locale + benchmark esterno (obbligatoria)
 Per ogni nuova attività selezionata:
 1. Identifica 3 competitor nella stessa città e settore
-2. Analizza per ciascuno:
+2. Aggiungi 2-5 benchmark esterni top di settore (ispirazione storytelling/UI)
+3. Analizza per ciascuno:
    - Design
    - Struttura
    - Debolezze visive
    - Debolezze persuasive
-3. Estrai gap di mercato (cosa manca ai competitor)
-4. Definisci come il sito prodotto sarà superiore (visivamente + strategicamente)
+4. Estrai gap di mercato (cosa manca ai competitor)
+5. Definisci come il sito prodotto sarà superiore (visivamente + strategicamente)
+6. Elenca pattern da integrare nel sito (hero, storytelling visual-first, proof, navigazione, CTA)
 
 Output minimo da salvare: sezione "Analisi Competitor" dentro `lead.txt`.
 

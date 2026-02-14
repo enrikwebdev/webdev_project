@@ -23,6 +23,7 @@
 - Evitare box puramente testuali: preferire sezioni storytelling visual-first (immagine/video + copy breve + proof/CTA) per mantenere impatto premium.
 - Aspettativa qualità: i prossimi siti devono partire già con qualità pari o superiore al livello attuale, senza step intermedi mediocri.
 - Media policy avanzata: quando disponibili foto online ufficiali e realmente valorizzanti (negozio/lavori), preferirle rispetto allo stock; usare stock solo se migliore per resa premium o se le foto ufficiali non sono adeguate.
+- Workflow futuro: integrare sempre una fase di ricerca ispirazionale/benchmark online prima della produzione (pattern storytelling, UX e visual da adattare in modo originale).
 
 ## Operating Notes
 - In caso di dubbio su presenza sito: scartare lead (SCARTATA_HA_SITO).

@@ -2,13 +2,14 @@
 
 1. Ricerca nuova attività in Lombardia
 2. Selezione migliore opportunità
-3. **Analisi competitor locale (3 competitor) + strategia posizionamento**
-4. Creazione sito (contenuti originali) in modalità Elite Agency
-5. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
-6. Scrittura `proposta_email.txt`
-7. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)
-8. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse)
-9. Log su `Lombardia/_ops/registro_storico.csv`
+3. **Ricerca ispirazionale obbligatoria** (2-5 benchmark siti top di settore: storytelling, UX, visual, CTA)
+4. **Analisi competitor locale (3 competitor) + strategia posizionamento**
+5. Creazione sito (contenuti originali) in modalità Elite Agency
+6. Salvataggio cartella `/Lombardia/NomeAttivita_Citta/`
+7. Scrittura `proposta_email.txt`
+8. Verifica architettura UX: non solo one-page quando il contesto richiede pagine separate (es. servizi/blog/prenota)
+9. QA light obbligatorio pre-consegna (Playwright smoke + Lighthouse)
+10. Log su `Lombardia/_ops/registro_storico.csv`
 
 Standard obbligatori:
 - `Lombardia/_ops/design_standard_2025_2026.md`
