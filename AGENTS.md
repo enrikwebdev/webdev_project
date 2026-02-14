@@ -212,8 +212,9 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 When running the Lombardia pipeline, enforce these non-negotiables:
 
 - Never target businesses that already have a professional website.
-- Run explicit multi-check verification before qualifying a lead.
-- Produce premium, conversion-oriented websites (not generic templates).
+- Enforce NO-SITO Gate v2 (4/4 checks + evidence in lead file) before qualifying a lead.
+- Produce premium, conversion-oriented websites (not generic templates), using sector blueprints when useful.
+- Run Elite Agency phases: competitor analysis → positioning → premium design → conversion optimization → self-evaluation.
 - Save every cycle in a strict folder structure with lead + outreach + log updates.
 - Treat each cycle as iterative improvement over the previous one.
 

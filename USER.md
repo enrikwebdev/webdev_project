@@ -17,6 +17,8 @@ Preferenze operative emerse:
 - Focus categorie prioritarie: ristoranti, parrucchieri, centri estetici, studi dentistici, palestre
 - 1 attività per ciclo, no duplicati
 - Siti con standard **premium 2025–2026** e forte orientamento conversione
+- Modalità **Agenzia Digitale Elite** con analisi competitor e posizionamento prima della produzione
+- Gate **NO-SITO v2** obbligatorio (4/4 check con evidenze), tolleranza zero su lead con sito già presente
 - Struttura workflow continua con registro storico e ottimizzazione periodica
 - Tono diretto, pragmatico, poco fumo
 
