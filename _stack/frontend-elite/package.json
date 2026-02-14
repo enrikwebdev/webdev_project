@@ -11,7 +11,8 @@
     "qa:dev": "vite --host 127.0.0.1 --port 4173",
     "qa:lh": "lhci autorun --config=./lighthouserc.json",
     "qa:pw": "playwright test",
-    "qa:light": "npm run build && npm run qa:pw && npm run qa:lh"
+    "qa:assets": "node scripts/check-assets.mjs",
+    "qa:light": "npm run build && npm run qa:assets && npm run qa:pw && npm run qa:lh"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

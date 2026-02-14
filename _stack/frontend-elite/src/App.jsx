@@ -134,7 +134,7 @@ function Home() {
 function TrattamentiPage() {
   const services = [
     ['Taglio Personalizzato', 'Taglio su misura in base a viso, volume e stile.', 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80'],
-    ['Colore & Schiariture', 'Tecniche colore per luminosità naturale e armoniosa.', 'https://images.unsplash.com/photo-1560869713-da86a9ec94f5?auto=format&fit=crop&w=1200&q=80'],
+    ['Colore & Schiariture', 'Tecniche colore per luminosità naturale e armoniosa.', 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80'],
     ['Piega Styling', 'Piega durevole, morbida e adatta alla tua quotidianità.', 'https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?auto=format&fit=crop&w=1200&q=80'],
     ['Trattamenti Ricostruzione', 'Nutrimento profondo per capelli più sani e forti.', 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1200&q=80'],
   ]
@@ -225,9 +225,9 @@ function PrenotaPage() {
         <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1400&q=80" alt="Prenota salone" className="h-full min-h-[320px] w-full object-cover" />
         <div className="p-10 md:p-14">
           <p className="text-xs uppercase tracking-[0.22em] text-rose-200">Prenota</p>
-          <h1 className="mt-3 text-5xl font-black">Blocca il tuo appuntamento</h1>
+          <h1 className="mt-3 break-words text-4xl font-black leading-tight md:text-5xl">Blocca il tuo appuntamento</h1>
           <p className="mt-4 max-w-xl text-[#eadde2]">Via Giambattista Tiepolo 11, Bergamo (BG). Disponibilità limitata nelle fasce più richieste.</p>
-          <a href="tel:+390354519485" className="mt-8 inline-block rounded-full bg-rose-300 px-8 py-4 text-base font-bold text-black">Chiama 035 4519485</a>
+          <a href="tel:+390354519485" className="mt-8 inline-block w-full rounded-full bg-rose-300 px-6 py-4 text-center text-base font-bold text-black sm:w-auto sm:px-8">Chiama 035 4519485</a>
         </div>
       </div>
     </section>
