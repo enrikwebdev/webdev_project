@@ -11,6 +11,9 @@
 Standard obbligatori:
 - `Lombardia/_ops/design_standard_2025_2026.md`
 - `Lombardia/_ops/elite_agency_mode.md`
+- `Lombardia/_ops/no_sito_gate_v2.md`
+- `Lombardia/_ops/outreach_engine.md`
+- `Lombardia/_ops/blueprints/*` (in base al settore)
 
 Vincoli:
 - Non duplicare attività già lavorate
