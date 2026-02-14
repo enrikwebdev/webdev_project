@@ -7,6 +7,8 @@
 5. Scrittura `proposta_email.txt`
 6. Log su `Lombardia/_ops/registro_storico.csv`
 
+Standard design: prima di finalizzare ogni sito applicare obbligatoriamente `Lombardia/_ops/design_standard_2025_2026.md`.
+
 Vincoli:
 - Non duplicare attività già lavorate
 - Mantenere registro storico
