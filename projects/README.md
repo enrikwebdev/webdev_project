@@ -4,8 +4,17 @@ Struttura standard:
 - `projects/active/` → progetti in corso
 - `projects/archive/` → progetti chiusi/storici
 - `projects/templates/` → template riutilizzabili
-- `projects/_ops/` → automazioni, script e processi trasversali
+- `projects/_ops/` → automazioni, processi e policy trasversali
 
-Regola operativa:
-- Ogni nuovo progetto va creato in `projects/active/<nome-progetto>`.
-- A chiusura, spostare in `projects/archive/<nome-progetto>`.
+## Siti cliente/proposta (link stabili)
+- `projects/sites/active/<site-slug>/` → siti attivi (target 14 giorni)
+- `projects/sites/expired/<site-slug>/` → siti scaduti/archiviati
+- `projects/sites/_template/` → base sito
+
+Regole:
+- Niente branch per sito (evitiamo proliferazione branch).
+- Un sito = una cartella + `site-meta.json`.
+- Dopo 14 giorni si sposta in `expired` (script lifecycle).
+
+Comando check lifecycle:
+- `node projects/_ops/site_lifecycle_check.mjs`
