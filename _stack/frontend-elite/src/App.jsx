@@ -7,7 +7,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 function useRoute() {
   const [route, setRoute] = useState(window.location.pathname || '/')
-
   useEffect(() => {
     const onPop = () => setRoute(window.location.pathname || '/')
     window.addEventListener('popstate', onPop)
@@ -51,14 +50,7 @@ function PageShell({ children }) {
       gsap.fromTo(
         el,
         { opacity: 0, y: 24 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          delay: i * 0.03,
-          ease: 'power2.out',
-          scrollTrigger: { trigger: el, start: 'top 86%' },
-        },
+        { opacity: 1, y: 0, duration: 0.65, delay: i * 0.02, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 86%' } },
       )
     })
 
@@ -70,6 +62,28 @@ function PageShell({ children }) {
   }, [])
 
   return <>{children}</>
+}
+
+function VisualStoryBlock({ title, text, image, badge }) {
+  return (
+    <article data-reveal className="grid overflow-hidden rounded-[1.8rem] border border-white/10 bg-[#121214] md:grid-cols-2">
+      <figure className="relative min-h-[260px]">
+        <img src={image} alt={title} className="h-full w-full object-cover" />
+        <span className="absolute left-4 top-4 rounded-full bg-black/55 px-3 py-1 text-xs tracking-[0.14em] text-amber-200 backdrop-blur">{badge}</span>
+      </figure>
+      <div className="flex items-center p-7 md:p-10">
+        <div>
+          <h3 className="text-3xl font-black leading-tight">{title}</h3>
+          <p className="mt-4 text-[#d3cec4]">{text}</p>
+          <div className="mt-6 flex flex-wrap gap-2 text-xs text-amber-200">
+            <span className="rounded-full border border-amber-300/40 px-3 py-1">Precisione</span>
+            <span className="rounded-full border border-amber-300/40 px-3 py-1">Impatto visivo</span>
+            <span className="rounded-full border border-amber-300/40 px-3 py-1">Stile personale</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  )
 }
 
 function Home() {
@@ -90,45 +104,60 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <div data-reveal className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300">In evidenza</p>
-          <h2 className="mt-3 text-4xl font-black md:text-6xl">Esperienza, immagine, precisione</h2>
+      <section className="mx-auto max-w-7xl space-y-6 px-6 py-20">
+        <div data-reveal className="mb-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300">Storytelling visivo</p>
+          <h2 className="mt-3 text-4xl font-black md:text-6xl">Dal problema al risultato, senza blocchi noiosi</h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          {[
-            ['Taglio su misura', 'Studio proporzioni viso e texture capelli.'],
-            ['Barba precisa', 'Rifinitura pulita e naturale.'],
-            ['Stile che dura', 'Routine semplice tra un appuntamento e l’altro.'],
-          ].map(([t, d]) => (
-            <article key={t} data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-7">
-              <h3 className="text-2xl font-bold">{t}</h3>
-              <p className="mt-3 text-[#d3cec4]">{d}</p>
-            </article>
-          ))}
-        </div>
+
+        <VisualStoryBlock
+          badge="01 · Diagnosi"
+          title="Taglio e barba devono parlare la stessa lingua"
+          text="Analizziamo forma del viso, densità, stile di vita e obiettivo estetico. Ogni scelta tecnica parte da qui, non da template standard."
+          image="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&q=80"
+        />
+
+        <VisualStoryBlock
+          badge="02 · Esecuzione"
+          title="Linee pulite, sfumature controllate, dettaglio premium"
+          text="Tecnica e precisione per un risultato elegante subito visibile, con transizioni pulite e finitura professionale."
+          image="https://images.unsplash.com/photo-1512690459411-b0fd1c86b8a8?auto=format&fit=crop&w=1400&q=80"
+        />
+
+        <VisualStoryBlock
+          badge="03 · Risultato"
+          title="Look forte oggi, mantenibile domani"
+          text="Ti consegniamo uno stile che regge nel quotidiano: più presenza, più coerenza, meno tempo perso davanti allo specchio."
+          image="https://images.unsplash.com/photo-1503951458645-643d53d661c5?auto=format&fit=crop&w=1400&q=80"
+        />
       </section>
     </>
   )
 }
 
 function TrattamentiPage() {
+  const services = [
+    ['Signature Cut', 'Taglio sartoriale su linee viso e stile personale.', 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80'],
+    ['Beard Architecture', 'Definizione barba con geometrie bilanciate e naturali.', 'https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1200&q=80'],
+    ['Fade Precision', 'Sfumature pulite ad alta precisione.', 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80'],
+    ['Express Maintenance', 'Ritocco rapido per mantenere il look ordinato.', 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1200&q=80'],
+  ]
+
   return (
     <section className="mx-auto max-w-7xl px-6 py-16">
       <div data-reveal>
         <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Trattamenti</p>
         <h1 className="mt-3 text-5xl font-black">Servizi premium uomo</h1>
       </div>
+
       <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {[
-          ['Signature Cut', 'Taglio sartoriale su linee viso, stile e professione.'],
-          ['Beard Architecture', 'Definizione barba con geometrie bilanciate e naturali.'],
-          ['Fade Precision', 'Sfumature pulite ad alta precisione.'],
-          ['Express Maintenance', 'Ritocco rapido per mantenere il look sempre ordinato.'],
-        ].map(([t, d]) => (
-          <article key={t} data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-7">
-            <h2 className="text-2xl font-bold">{t}</h2>
-            <p className="mt-3 text-[#d3cec4]">{d}</p>
+        {services.map(([t, d, img]) => (
+          <article key={t} data-reveal className="overflow-hidden rounded-3xl border border-white/10 bg-[#111113]">
+            <img src={img} alt={t} className="h-52 w-full object-cover" />
+            <div className="p-7">
+              <h2 className="text-2xl font-bold">{t}</h2>
+              <p className="mt-3 text-[#d3cec4]">{d}</p>
+            </div>
           </article>
         ))}
       </div>
@@ -138,32 +167,48 @@ function TrattamentiPage() {
 
 function ChiSiamoPage() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16">
-      <div data-reveal>
-        <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Chi siamo</p>
-        <h1 className="mt-3 text-5xl font-black">Tradizione barber, mentalità contemporanea</h1>
-        <p className="mt-6 text-lg text-[#d3cec4]">Caruso BarberShop nasce per offrire un grooming maschile elegante, preciso e coerente con l’identità di chi lo sceglie. Ogni servizio è progettato per risultato immediato e mantenibilità reale.</p>
+    <section className="mx-auto max-w-7xl px-6 py-16">
+      <div className="grid gap-6 md:grid-cols-2">
+        <figure data-reveal className="overflow-hidden rounded-3xl border border-white/10">
+          <img src="https://images.unsplash.com/photo-1589985270958-b3f8f5cb7f44?auto=format&fit=crop&w=1400&q=80" alt="Team barber" className="h-full w-full object-cover" />
+        </figure>
+        <div data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-8 md:p-10">
+          <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Chi siamo</p>
+          <h1 className="mt-3 text-5xl font-black leading-tight">Tradizione barber, mentalità contemporanea</h1>
+          <p className="mt-6 text-lg text-[#d3cec4]">Caruso BarberShop unisce cultura classica del grooming maschile e cura moderna del dettaglio. Ogni appuntamento è progettato per darti un risultato forte, credibile e coerente con chi sei.</p>
+          <div className="mt-7 grid grid-cols-3 gap-3 text-center text-sm">
+            <div className="rounded-xl border border-white/10 py-3"><strong className="block text-amber-200">10+</strong>Anni</div>
+            <div className="rounded-xl border border-white/10 py-3"><strong className="block text-amber-200">1000+</strong>Clienti</div>
+            <div className="rounded-xl border border-white/10 py-3"><strong className="block text-amber-200">4.8/5</strong>Valutazione</div>
+          </div>
+        </div>
       </div>
     </section>
   )
 }
 
 function BlogPage() {
+  const posts = [
+    ['Come scegliere il taglio in base al viso', 'Guida pratica per evitare errori comuni.', 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80'],
+    ['Barba corta o lunga?', 'Strategie di mantenimento professionale.', 'https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1200&q=80'],
+    ['Routine post-barber', 'Prodotti e passaggi per tenere il risultato più a lungo.', 'https://images.unsplash.com/photo-1470259078422-826894b933aa?auto=format&fit=crop&w=1200&q=80'],
+  ]
+
   return (
     <section className="mx-auto max-w-7xl px-6 py-16">
       <div data-reveal>
         <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Blog</p>
         <h1 className="mt-3 text-5xl font-black">Consigli grooming & stile</h1>
       </div>
+
       <div className="mt-10 grid gap-5 md:grid-cols-3">
-        {[
-          ['Come scegliere il taglio in base al viso', 'Guida pratica per evitare errori comuni.'],
-          ['Barba corta o lunga?', 'Strategie di mantenimento professionale.'],
-          ['Routine post-barber', 'Prodotti e passaggi per tenere il risultato più a lungo.'],
-        ].map(([t, d]) => (
-          <article key={t} data-reveal className="rounded-3xl border border-white/10 bg-[#111113] p-7">
-            <h2 className="text-xl font-bold">{t}</h2>
-            <p className="mt-3 text-[#d3cec4]">{d}</p>
+        {posts.map(([t, d, img]) => (
+          <article key={t} data-reveal className="overflow-hidden rounded-3xl border border-white/10 bg-[#111113]">
+            <img src={img} alt={t} className="h-44 w-full object-cover" />
+            <div className="p-6">
+              <h2 className="text-xl font-bold">{t}</h2>
+              <p className="mt-3 text-[#d3cec4]">{d}</p>
+            </div>
           </article>
         ))}
       </div>
@@ -173,12 +218,15 @@ function BlogPage() {
 
 function PrenotaPage() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16">
-      <div data-reveal className="rounded-[2rem] border border-amber-300/30 bg-gradient-to-r from-[#121214] to-[#171514] p-10 text-center md:p-14">
-        <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Prenota</p>
-        <h1 className="mt-3 text-5xl font-black">Blocca il tuo slot</h1>
-        <p className="mx-auto mt-4 max-w-xl text-[#d4cfc4]">Via Borgo Santa Caterina 61, Bergamo (BG). Disponibilità limitata per mantenere standard elevati.</p>
-        <a href="tel:+390350160947" className="mt-8 inline-block rounded-full bg-amber-300 px-8 py-4 text-base font-bold text-black">Chiama 035 0160947</a>
+    <section className="mx-auto max-w-6xl px-6 py-16">
+      <div data-reveal className="grid overflow-hidden rounded-[2rem] border border-amber-300/30 bg-gradient-to-r from-[#121214] to-[#171514] md:grid-cols-2">
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1400&q=80" alt="Prenota barber" className="h-full min-h-[320px] w-full object-cover" />
+        <div className="p-10 md:p-14">
+          <p className="text-xs uppercase tracking-[0.22em] text-amber-300">Prenota</p>
+          <h1 className="mt-3 text-5xl font-black">Blocca il tuo slot</h1>
+          <p className="mt-4 max-w-xl text-[#d4cfc4]">Via Borgo Santa Caterina 61, Bergamo (BG). Disponibilità limitata per mantenere standard elevati.</p>
+          <a href="tel:+390350160947" className="mt-8 inline-block rounded-full bg-amber-300 px-8 py-4 text-base font-bold text-black">Chiama 035 0160947</a>
+        </div>
       </div>
     </section>
   )
