@@ -17,6 +17,9 @@
 - Direttiva permanente: memorizzare tutte le sue indicazioni operative e usarle per miglioramento continuo.
 - Nei siti, se disponibili recensioni Google, includere testimonianze positive in sezione clienti soddisfatti.
 - Nei siti, includere quando possibile foto/video pubblici dei lavori reali dell’attività (fonti ufficiali), con fallback stock coerente.
+- Preferisce architettura ibrida (non solo one-page): quando cambia contesto, usare pagine/switch dedicati (es. Trattamenti, Chi siamo, Blog, Prenota).
+- Richiede logo dedicato in testata per ogni attività (wordmark/monogram coerente col brand).
+- Evitare animazioni "pacchiane": motion premium sobrio/elegante.
 
 ## Operating Notes
 - In caso di dubbio su presenza sito: scartare lead (SCARTATA_HA_SITO).
