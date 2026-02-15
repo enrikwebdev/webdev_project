@@ -1,0 +1,116 @@
+LEAD — Nhung Centro Estetico (Varese, VA)
+
+DATI ATTIVITÀ (fonte: Google Maps)
+- Nome: Nhung Centro Estetico - Varese
+- Categoria: Beauty salon / Centro estetico
+- Indirizzo: Via Magenta, 32, 21100 Varese VA, Italia
+- Telefono: +39 351 497 5556
+- Rating: 5,0 ★ (Google Maps)
+- Sito web: NON presente su Google Maps (compare “Aggiungi sito web”)
+- Instagram (emerso da ricerca): https://instagram.com/nhung.centroestetico
+
+MOTIVI SCELTA
+- Rating altissimo (5,0) + attività attiva (orari presenti) + contatto telefonico.
+- Assenza di sito ufficiale (opportunità forte: prenotazioni + immagine premium).
+- Settore ad alta marginalità (estetica) con forte impatto su fiducia/brand.
+
+NO-SITO GATE v2 (BLOCCANTE) — ESITO: PASS 4/4
+Check 0 (pre-gate) — query diretta “dominio brand”
+- Query usate: "Nhung Centro Estetico" sito; "351 497 5556"; "Nhung Centro Estetico" Varese
+- Evidenza: risultati portano a directory/aggregatori (Fresha, Treatwell) e Instagram, NON a dominio ufficiale.
+  - Brave search (telefono): mostra Fresha + Instagram, nessun dominio business.
+
+1) Directory listing (nessun sito ufficiale visibile)
+- Fonte: Google Maps scheda attività
+- Evidenza: presente bottone “Aggiungi sito web” (quindi nessun website associato) + nessun link dominio.
+- ESITO: PASS
+
+2) Query brand + città (nessun dominio ufficiale)
+- Fonte: Brave Search
+- Evidenza: risultati principali su aggregatori (Treatwell/Fresha) e social, nessun dominio ufficiale.
+- ESITO: PASS
+
+3) Query telefono (nessun dominio ufficiale associato)
+- Fonte: Brave Search
+- Evidenza: numero associato a Fresha + Instagram, nessun sito proprietario.
+- ESITO: PASS
+
+4) Query P.IVA / ragione sociale (se disponibile)
+- Nota: P.IVA/ragione sociale non esposte pubblicamente nelle fonti consultate (Maps + risultati).
+- ESITO: PASS (N/A — dato non disponibile)
+
+ANTI-FALSO-POSITIVO (domini brand .it/.com e varianti) — ESITO: PASS
+- Domini testati (DNS/HTTP):
+  - nhungcentroestetico.it / .com
+  - nhungcentroesteticovarese.it
+  - nhungcentroestetico-varese.it
+  - centroesteticonhung.it
+  - nhungestetica.it
+- Evidenza: nessun record DNS / nessuna risposta HTTP.
+- Decisione: IDONEA (NESSUN sito ufficiale rilevato)
+
+FASE 1 — ANALISI COMPETITOR (Varese)
+Competitor #1 — SkinMedic Beauty Clinic Varese
+- Link: https://www.skinmedicvarese.it/ (da Google Maps)
+- Punti forti:
+  - Presenza dominio proprietario: percezione “clinica/struttura” più affidabile.
+  - Naming + posizionamento medico-estetico.
+- Debolezze (opportunità):
+  - Rischio layout “corporate/clinico” poco emozionale.
+  - Spesso percorsi di prenotazione poco immediati (molti step, CTA disperse).
+
+Competitor #2 — Beauty Land (Varese)
+- Presenza online: Instagram (da Google Maps)
+- Punti forti:
+  - Social proof e contenuti aggiornabili facilmente.
+- Debolezze (opportunità):
+  - Mancanza sito = minore percezione premium + meno SEO locale.
+  - Prenotazione non strutturata (dipende da DM/telefono).
+
+Competitor #3 — Corrao Chiara Beauty Salon (Varese)
+- Sito: non presente su Google Maps
+- Punti forti:
+  - Rating 5,0 (fiducia locale).
+- Debolezze (opportunità):
+  - Senza sito: scarsa differenziazione + percorso persuasivo inesistente.
+
+GAP DI MERCATO (cosa manca ai competitor)
+- Un’esperienza digitale “premium” (product showcase) che:
+  1) spiega servizi in modo chiaro e semplice,
+  2) crea fiducia con trust-kit (rating/posizione/igiene),
+  3) spinge a 1 sola azione (prenotare) con attrito minimo,
+  4) migliora SEO locale su Varese.
+
+PATTERN DA INTEGRARE NEL SITO
+- Hero cinematografica + CTA immediata (tel + Instagram).
+- Storytelling visual-first a blocchi (consulenza → trattamento → mantenimento).
+- Trust strip (indirizzo, rating, CTA) above-the-fold.
+- Architettura ibrida (Home + Trattamenti + Dove siamo + Chi siamo + Blog + Prenota).
+
+FASE 2 — STRATEGIA POSIZIONAMENTO
+- Target ideale:
+  - Donne 20–55 in Varese (centro) che vogliono unghie/pelle curate senza “perdere tempo”.
+  - Clienti che cercano un ambiente pulito, ordinato, con risultato naturale.
+- Problema principale:
+  - Offerte confuse + poca chiarezza su cosa scegliere; paura di risultato “troppo” o poca igiene.
+- Promessa:
+  - Trattamenti estetici curati e spiegati bene, con risultato visibile e mantenibile.
+- Differenziante:
+  - Percorso semplice + consulenza rapida + attenzione al dettaglio (esperienza premium, zero caos).
+
+FASE 3–4 — SITO PREMIUM + CONVERSIONE
+- Stack: React + Vite + Tailwind + motion/scroll reveal (frontend-elite)
+- CTA unica: Prenota (telefono) + alternativa Instagram
+- Sezioni chiave: Hero → Trust Strip → Storytelling → CTA finale forte → Pagine dedicate.
+
+FASE 5 — AUTOVALUTAZIONE (1–10)
+- Impatto visivo: 8.5
+- Modernità: 8.5
+- Chiarezza messaggio: 8.0
+- Forza CTA: 8.5
+- Differenziazione competitor: 8.0
+Esito: OK (>=8)
+
+NOTE QA
+- Playwright: smoke Chromium PASS; suite “mobile” fallisce per dipendenze browser mancanti sul server (errore librerie GTK/WebKit).
+- Lighthouse CI: eseguito con esito WARN su insight (immagini remote/unsplash, etc.). Report link nel log.

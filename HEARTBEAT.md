@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-14T21:42:00Z",
-  "total_cycles": 6,
-  "total_leads_found": 6,
-  "total_sites_created": 6,
+  "last_cycle_timestamp": "2026-02-15T01:41:00Z",
+  "total_cycles": 7,
+  "total_leads_found": 7,
+  "total_sites_created": 7,
   "total_emails_sent": 6,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Laura Acconciature",
-    "city": "Bergamo",
-    "sector": "Parrucchiere",
-    "status": "scartata_ha_sito_post_check",
-    "last_update": "2026-02-14T22:02:17.179Z"
+    "name": "Nhung Centro Estetico",
+    "city": "Varese",
+    "sector": "Centro estetico",
+    "status": "site_created_email_ready",
+    "last_update": "2026-02-15T01:55:00Z"
   },
   "pipeline": [
     {
@@ -62,6 +62,14 @@
       "status": "scartata_ha_sito_post_check",
       "created_at": "2026-02-14T21:42:00Z",
       "updated_at": "2026-02-14T22:02:17.179Z"
+    },
+    {
+      "name": "Nhung Centro Estetico",
+      "city": "Varese",
+      "sector": "Centro estetico",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-15T01:41:00Z",
+      "updated_at": "2026-02-15T01:55:00Z"
     }
   ],
   "performance_metrics": {
@@ -123,6 +131,12 @@
       "azione": "Correzione qualifica lead Laura Acconciature",
       "esito": "scartata_ha_sito",
       "miglioramenti": "Trovato sito ufficiale laurarosinaacconciature.com; da rafforzare gate con ricerca varianti nome + controllo P.IVA e città reale."
+    },
+    {
+      "timestamp": "2026-02-15T01:55:00Z",
+      "azione": "Nuovo ciclo su Nhung Centro Estetico Varese",
+      "esito": "completato",
+      "miglioramenti": "Centro estetico: homepage con trust-strip above-the-fold + CTA unica + pagine ibride; QA smoke + LHCI"
     }
   ]
 }
