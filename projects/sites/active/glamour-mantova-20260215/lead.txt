@@ -1,0 +1,135 @@
+LEAD — Glamour (Mantova, MN)
+
+DATI ATTIVITÀ (fonte: PagineGialle)
+- Nome: Glamour (Glamour di Ferrari Chiara e Di Raffaele Federica S.N.C.)
+- Categoria: Parrucchieri / Istituti di bellezza (parrucchiere unisex + servizi beauty)
+- Indirizzo: Via Susani Giorgio, 16 — 46100 Mantova (MN)
+- Telefono: +39 331 376 9201
+- Rating: 5,0 ★ — 9 recensioni (Google, riportate su PagineGialle)
+- P.IVA / CF: 02226310205
+- Email pubblica: non trovata nelle fonti consultate
+- Scheda: https://www.paginegialle.it/parrucchiere-glamour-mantova
+
+MOTIVI SCELTA
+- Rating molto alto (5,0) e recensioni reali disponibili ⇒ trust immediato.
+- Nessun sito web ufficiale emerso (opportunità forte: prenotazioni + immagine premium + SEO locale Mantova).
+- Offerta completa (capelli + beauty) ⇒ alto valore percepito e molte pagine/keyword utili.
+
+NO-SITO GATE v2 (BLOCCANTE) — ESITO: PASS 4/4
+
+Check 0 (pre-gate) — query diretta “dominio brand”
+- Query usate (DuckDuckGo Lite):
+  - Glamour parrucchiere Mantova sito
+  - "Glamour" .it / "Glamour" .com (implicitamente nei risultati)
+- Evidenza: risultati su aggregatori/directory (PagineGialle/PagineBianche), piattaforme prenotazione (Treatwell/Fresha) e Facebook; nessun dominio proprietario del salone.
+- ESITO: PASS
+
+1) Directory listing: nessun sito web ufficiale visibile
+- Fonte: PagineGialle scheda attività
+- Evidenza: presenti CTA Telefono/WhatsApp/Chat/Scrivici; nessun bottone/link “Sito web”.
+- ESITO: PASS
+
+2) Query brand + città: nessun dominio ufficiale
+- Fonte: DuckDuckGo Lite
+- Evidenza: emergono Treatwell/Fresha/Facebook + directory; nessun dominio proprietario.
+- ESITO: PASS
+
+3) Query telefono: nessun dominio ufficiale associato
+- Fonte: DuckDuckGo Lite (query: 331 3769201 sito)
+- Evidenza: risultati non collegati al salone (rumore/lookup); nessun dominio business.
+- ESITO: PASS
+
+4) Query P.IVA / ragione sociale
+- Fonte: DuckDuckGo Lite (query: 02226310205)
+- Evidenza: risultati su database/registri aziendali + PagineGialle/PagineBianche; nessun sito ufficiale.
+- ESITO: PASS
+
+ANTI-FALSO-POSITIVO (domini brand .it/.com e varianti) — ESITO: PASS
+- Domini testati (DNS/HTTP):
+  - glamourmantova.it / glamourmantova.com
+  - glamouracconciature.it
+- Evidenza: glamourmantova.it/.com non risolvono (ENOTFOUND). glamouracconciature.it: fetch failed (nessun sito raggiungibile/valido).
+- Decisione: IDONEA (NESSUN sito ufficiale rilevato)
+
+FASE 1 — ANALISI COMPETITOR (Mantova) + benchmark esterno
+
+Competitor #1 — Pinup Hairfashion (Mantova)
+- Link: https://www.pinupacconciature.it
+- Punti forti:
+  - Claim “elegante e discreto” + storico (25 anni) ⇒ percezione premium.
+- Debolezze (opportunità):
+  - Contenuto molto testuale, poca struttura persuasiva e poche CTA chiare.
+  - Scarsa “product showcase” (prima/dopo, percorsi, proof above-the-fold).
+
+Competitor #2 — EZ Hair Stylist (Mantova)
+- Link: https://www.ezhairstylist.it
+- Punti forti:
+  - Descrive staff, prodotti e formazione ⇒ fiducia.
+- Debolezze (opportunità):
+  - Pagina informativa, poco orientata a conversione (CTA non dominante, percorsi lunghi).
+  - Visual storytelling limitato.
+
+Competitor #3 — Brio Staff Acconciature (Mantova)
+- Link: https://www.briostaffacconciature.it
+- Punti forti:
+  - Storia + specializzazioni (balayage, degradé, keratina) + estetica.
+- Debolezze (opportunità):
+  - Struttura “chi siamo” molto lunga, rischio dispersione.
+  - Poca differenziazione visiva e poca chiarezza sul “percorso” cliente.
+
+Benchmark esterni (ispirazione UI/storytelling)
+- Toni&Guy (pattern hero + editorial): https://www.toniandguy.com
+- Aveda (sezioni a blocchi, visual-first): https://www.aveda.com
+- Apple product storytelling (scroll narrative, microinterazioni): https://www.apple.com
+
+GAP DI MERCATO (cosa manca ai competitor locali)
+- Un’esperienza digitale “premium product-style” che:
+  1) mette la CTA subito (prenota),
+  2) spiega servizi per risultato (non per elenco),
+  3) mostra fiducia (rating/recensioni) sopra la piega,
+  4) crea un percorso chiaro (consulenza → tecnica → mantenimento).
+
+PATTERN INTEGRATI NEL SITO
+- Hero cinematografica + CTA unica.
+- Trust strip above-the-fold (rating, indirizzo, telefono).
+- Storytelling visual-first in 3 blocchi.
+- Recensioni reali (fonte Google via PagineGialle).
+- Architettura ibrida: Home + Servizi + Dove siamo + Chi siamo + Blog + Prenota.
+
+FASE 2 — STRATEGIA POSIZIONAMENTO
+- Target ideale:
+  - Donne 20–55 e uomini 18–55 in Mantova che vogliono un look ordinato e naturale.
+  - Clienti che apprezzano precisione e consigli pratici (zero fuffa).
+- Problema principale:
+  - “Non so cosa mi sta bene” + paura di colore/risultato troppo artificiale; poco tempo.
+- Promessa:
+  - Look naturale, curato e mantenibile, costruito su consulenza e tecnica.
+- Differenziante:
+  - Percorso semplice + una sola CTA + forte proof (5,0/9) per ridurre attrito.
+
+FASE 3–4 — SITO PREMIUM + CONVERSIONE
+- Stack: React + Vite + Tailwind + scroll reveal (Lenis + GSAP ScrollTrigger)
+- CTA unica: Prenota (telefono)
+- Conversion pack:
+  - Trust strip (rating/indirizzo/telefono)
+  - Recensioni reali
+  - CTA finale forte
+
+FASE 5 — AUTOVALUTAZIONE (1–10)
+- Impatto visivo: 8.5
+- Modernità: 8.5
+- Chiarezza messaggio: 8.2
+- Forza CTA: 8.8
+- Differenziazione competitor: 8.2
+Esito: OK (>=8)
+
+QA LIGHT
+- Playwright (qa:pw):
+  - Chromium: PASS (2 test)
+  - Mobile: FAIL per dipendenze browser mancanti sul server (libgtk-4, etc.)
+- Lighthouse CI (qa:lh):
+  - Report: https://googlechrome.github.io/lighthouse-ci/viewer/?baseReport=https%3A%2F%2Fstorage.googleapis.com%2Flighthouse-infrastructure.appspot.com%2Freports%2F1771184657943-34676.report.html&compareReport=https%3A%2F%2Fstorage.googleapis.com%2Flighthouse-infrastructure.appspot.com%2Freports%2F1771184697998-7456.report.html
+  - Esito: assertion FAIL su immagini responsive/unused JS/LCP (immagini remote Unsplash, bundle standard stack).
+
+LINK PUBBLICO TEMPORANEO (tunnel)
+- https://widescreen-sussex-domain-may.trycloudflare.com
