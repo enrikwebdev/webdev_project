@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T05:46:00Z",
-  "total_cycles": 9,
+  "last_cycle_timestamp": "2026-02-15T09:38:00Z",
+  "total_cycles": 10,
   "total_leads_found": 8,
   "total_sites_created": 8,
   "total_emails_sent": 6,
@@ -157,6 +157,12 @@
       "azione": "Nuovo ciclo su Estetica O.G.M. Varese",
       "esito": "completato",
       "miglioramenti": "Ricerca lead via directory (PagineGialle/Virgilio) per bypass motori; sito premium con trust-strip + recensioni reali + CTA unica; tunnel pubblico"
+    },
+    {
+      "timestamp": "2026-02-15T09:38:00Z",
+      "azione": "Ciclo: ricerca lead (Como) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Su PagineGialle trovate schede senza sito (es. Dodò Salon) ma senza rating verificabile >=4; con motori bloccati non riesco a validare il rating. Serve fonte rating alternativa accessibile senza Google o regola per accettare rating/review interni directory quando presenti."
     }
   ]
 }
