@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T11:38:00Z",
-  "total_cycles": 11,
+  "last_cycle_timestamp": "2026-02-15T13:38:00Z",
+  "total_cycles": 12,
   "total_leads_found": 8,
   "total_sites_created": 8,
   "total_emails_sent": 6,
@@ -169,6 +169,12 @@
       "azione": "Ciclo: ricerca lead (Varese) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Candidate trovate su PagineGialle (es. Beauty Diffusion) ma: pulsante \"Sito web\" presente (FAIL gate) e recensioni assenti (rating non verificabile >=4). Necessario: fonte rating alternativa accessibile senza Google o regola accettazione rating directory quando presente."
+    },
+    {
+      "timestamp": "2026-02-15T13:38:00Z",
+      "azione": "Ciclo: ricerca lead (Lodi/LO e dintorni — palestre) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Su PagineGialle trovate attività con rating/recensioni ma quasi sempre con sito (dominio o Wix) => FAIL gate. Attività senza sito spesso senza recensioni => rating >=4 non verificabile. Serve: fonte rating alternativa (es. directory con stelle) o regola per considerare social (IG/FB) NON come ‘sito professionale’, mantenendo però anti-falso-positivo su domini .it/.com."
     }
   ]
 }
