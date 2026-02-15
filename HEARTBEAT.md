@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T13:38:00Z",
-  "total_cycles": 12,
+  "last_cycle_timestamp": "2026-02-15T15:38:00Z",
+  "total_cycles": 13,
   "total_leads_found": 8,
   "total_sites_created": 8,
   "total_emails_sent": 6,
@@ -175,6 +175,12 @@
       "azione": "Ciclo: ricerca lead (Lodi/LO e dintorni — palestre) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Su PagineGialle trovate attività con rating/recensioni ma quasi sempre con sito (dominio o Wix) => FAIL gate. Attività senza sito spesso senza recensioni => rating >=4 non verificabile. Serve: fonte rating alternativa (es. directory con stelle) o regola per considerare social (IG/FB) NON come ‘sito professionale’, mantenendo però anti-falso-positivo su domini .it/.com."
+    },
+    {
+      "timestamp": "2026-02-15T15:38:00Z",
+      "azione": "Ciclo: ricerca lead (Pavia/PV — parrucchieri+centri estetici) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Su PagineGialle molte attività con recensioni avevano pulsante 'Sito web' (dominio/IG) => FAIL gate; quelle senza 'Sito web' spesso senza recensioni => rating >=4 non verificabile. Necessario definire regola: social (IG/FB) = ok o fonte rating alternativa."
     }
   ]
 }
