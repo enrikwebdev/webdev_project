@@ -29,6 +29,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: |
+            **/package-lock.json
 
       - name: Build all active sites into pages_dist/
         run: bash scripts/pages-build.sh
