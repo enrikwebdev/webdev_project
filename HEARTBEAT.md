@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-15T17:38:00Z",
-  "total_cycles": 14,
-  "total_leads_found": 8,
-  "total_sites_created": 8,
+  "last_cycle_timestamp": "2026-02-15T19:38:00Z",
+  "total_cycles": 15,
+  "total_leads_found": 9,
+  "total_sites_created": 9,
   "total_emails_sent": 6,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Estetica O.G.M.",
-    "city": "Varese",
-    "sector": "Centro estetico",
+    "name": "Glamour",
+    "city": "Mantova",
+    "sector": "Parrucchiere / Istituto di bellezza",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-15T05:46:00Z"
+    "last_update": "2026-02-15T19:38:00Z"
   },
   "pipeline": [
     {
@@ -78,6 +78,14 @@
       "status": "site_created_email_ready",
       "created_at": "2026-02-15T05:46:00Z",
       "updated_at": "2026-02-15T05:46:00Z"
+    },
+    {
+      "name": "Glamour",
+      "city": "Mantova",
+      "sector": "Parrucchiere / Istituto di bellezza",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-15T19:38:00Z",
+      "updated_at": "2026-02-15T19:38:00Z"
     }
   ],
   "performance_metrics": {
@@ -187,6 +195,12 @@
       "azione": "Ciclo: ricerca lead (Lodi/LO — palestre) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Molte schede PagineGialle hanno pulsante \"Sito web\" (anche Wix/FB) => FAIL gate; altre senza recensioni => rating >=4 non verificabile. Serve fonte rating alternativa accessibile senza Google o regola esplicita su link social."
+    },
+    {
+      "timestamp": "2026-02-15T19:38:00Z",
+      "azione": "Nuovo ciclo su Glamour (Mantova) — sito premium + email pronta + tunnel pubblico",
+      "esito": "completato",
+      "miglioramenti": "Recensioni reali integrate + trust strip above-the-fold + storytelling visual-first in 3 blocchi"
     }
   ]
 }
