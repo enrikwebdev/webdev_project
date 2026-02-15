@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T15:38:00Z",
-  "total_cycles": 13,
+  "last_cycle_timestamp": "2026-02-15T17:38:00Z",
+  "total_cycles": 14,
   "total_leads_found": 8,
   "total_sites_created": 8,
   "total_emails_sent": 6,
@@ -181,6 +181,12 @@
       "azione": "Ciclo: ricerca lead (Pavia/PV — parrucchieri+centri estetici) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Su PagineGialle molte attività con recensioni avevano pulsante 'Sito web' (dominio/IG) => FAIL gate; quelle senza 'Sito web' spesso senza recensioni => rating >=4 non verificabile. Necessario definire regola: social (IG/FB) = ok o fonte rating alternativa."
+    },
+    {
+      "timestamp": "2026-02-15T17:38:00Z",
+      "azione": "Ciclo: ricerca lead (Lodi/LO — palestre) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Molte schede PagineGialle hanno pulsante \"Sito web\" (anche Wix/FB) => FAIL gate; altre senza recensioni => rating >=4 non verificabile. Serve fonte rating alternativa accessibile senza Google o regola esplicita su link social."
     }
   ]
 }
