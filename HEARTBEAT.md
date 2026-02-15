@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T09:38:00Z",
-  "total_cycles": 10,
+  "last_cycle_timestamp": "2026-02-15T11:38:00Z",
+  "total_cycles": 11,
   "total_leads_found": 8,
   "total_sites_created": 8,
   "total_emails_sent": 6,
@@ -163,6 +163,12 @@
       "azione": "Ciclo: ricerca lead (Como) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Su PagineGialle trovate schede senza sito (es. Dodò Salon) ma senza rating verificabile >=4; con motori bloccati non riesco a validare il rating. Serve fonte rating alternativa accessibile senza Google o regola per accettare rating/review interni directory quando presenti."
+    },
+    {
+      "timestamp": "2026-02-15T11:38:00Z",
+      "azione": "Ciclo: ricerca lead (Varese) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Candidate trovate su PagineGialle (es. Beauty Diffusion) ma: pulsante \"Sito web\" presente (FAIL gate) e recensioni assenti (rating non verificabile >=4). Necessario: fonte rating alternativa accessibile senza Google o regola accettazione rating directory quando presente."
     }
   ]
 }
