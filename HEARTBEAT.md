@@ -1,18 +1,18 @@
 {
-  "last_cycle_timestamp": "2026-02-15T03:38:00Z",
-  "total_cycles": 8,
-  "total_leads_found": 7,
-  "total_sites_created": 7,
+  "last_cycle_timestamp": "2026-02-15T05:46:00Z",
+  "total_cycles": 9,
+  "total_leads_found": 8,
+  "total_sites_created": 8,
   "total_emails_sent": 6,
   "total_followups_sent": 0,
   "total_closed_won": 0,
   "total_closed_lost": 0,
   "active_lead": {
-    "name": "Nhung Centro Estetico",
+    "name": "Estetica O.G.M.",
     "city": "Varese",
     "sector": "Centro estetico",
     "status": "site_created_email_ready",
-    "last_update": "2026-02-15T01:55:00Z"
+    "last_update": "2026-02-15T05:46:00Z"
   },
   "pipeline": [
     {
@@ -70,6 +70,14 @@
       "status": "site_created_email_ready",
       "created_at": "2026-02-15T01:41:00Z",
       "updated_at": "2026-02-15T01:55:00Z"
+    },
+    {
+      "name": "Estetica O.G.M.",
+      "city": "Varese",
+      "sector": "Centro estetico",
+      "status": "site_created_email_ready",
+      "created_at": "2026-02-15T05:46:00Z",
+      "updated_at": "2026-02-15T05:46:00Z"
     }
   ],
   "performance_metrics": {
@@ -143,6 +151,12 @@
       "azione": "Ciclo: ricerca lead (parrucchiere Bergamo) + applicazione gate NO-SITO v2",
       "esito": "non_completato_no_lead_idonea",
       "miglioramenti": "Limitazione accesso motori (Google/DuckDuckGo/Bing con challenge). Trovata lead con rating alto (My Fair) ma scartata per sito ufficiale myfairbergamo.it. Necessario usare fonte rating alternativa o lista PG con rating + nessun dominio."
+    },
+    {
+      "timestamp": "2026-02-15T05:46:00Z",
+      "azione": "Nuovo ciclo su Estetica O.G.M. Varese",
+      "esito": "completato",
+      "miglioramenti": "Ricerca lead via directory (PagineGialle/Virgilio) per bypass motori; sito premium con trust-strip + recensioni reali + CTA unica; tunnel pubblico"
     }
   ]
 }
