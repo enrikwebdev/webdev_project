@@ -1,6 +1,6 @@
 {
-  "last_cycle_timestamp": "2026-02-15T01:41:00Z",
-  "total_cycles": 7,
+  "last_cycle_timestamp": "2026-02-15T03:38:00Z",
+  "total_cycles": 8,
   "total_leads_found": 7,
   "total_sites_created": 7,
   "total_emails_sent": 6,
@@ -137,6 +137,12 @@
       "azione": "Nuovo ciclo su Nhung Centro Estetico Varese",
       "esito": "completato",
       "miglioramenti": "Centro estetico: homepage con trust-strip above-the-fold + CTA unica + pagine ibride; QA smoke + LHCI"
+    },
+    {
+      "timestamp": "2026-02-15T03:38:00Z",
+      "azione": "Ciclo: ricerca lead (parrucchiere Bergamo) + applicazione gate NO-SITO v2",
+      "esito": "non_completato_no_lead_idonea",
+      "miglioramenti": "Limitazione accesso motori (Google/DuckDuckGo/Bing con challenge). Trovata lead con rating alto (My Fair) ma scartata per sito ufficiale myfairbergamo.it. Necessario usare fonte rating alternativa o lista PG con rating + nessun dominio."
     }
   ]
 }

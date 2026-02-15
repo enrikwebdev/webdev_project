@@ -6,3 +6,4 @@ cycle_ts_utc,attivita,citta,cartella,stato,note
 2026-02-14T19:42:00Z,Caruso BarberShop,Bergamo,CarusoBarberShop_Bergamo,completato,NO-SITO v2 4/4 PASS + anti-falso-positivo PASS; sito premium online con tunnel pubblico; email pronta
 2026-02-14T21:42:00Z,Laura Acconciature,Bergamo,LauraAcconciature_Bergamo,scartata_ha_sito_post_check,Correzione post-check: rilevato sito ufficiale https://laurarosinaacconciature.com/ (qualità superiore); lead invalidata
 2026-02-15T01:41:00Z,Nhung Centro Estetico,Varese,NhungCentroEstetico_Varese,completato,NO-SITO v2 PASS (evidenze: Google Maps + ricerca Brave + check domini); sito premium creato; email pronta; tunnel pubblico incluso
+2026-02-15T03:38:00Z,(nessuna lead idonea),Bergamo,,non_completato_no_lead_idonea,Ricerca su PagineGialle + Brave. Lead candidata: "My Fair" (rating 4.9/11) scartata perché trovato sito ufficiale https://www.myfairbergamo.it (anti-falso-positivo FAIL).
